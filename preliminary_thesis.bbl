@@ -21,10 +21,34 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{nielsen_2018}
+\bibitem{neural-network-history}
+\BIBentryALTinterwordspacing
+2014. [Online]. Available:
+  \url{https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history1.html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{nielsen}
 \BIBentryALTinterwordspacing
 M.~A. Nielsen, ``Neural networks and deep learning,'' 2018. [Online].
   Available: \url{http://neuralnetworksanddeeplearning.com/chap4.html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{towards-data-science}
+\BIBentryALTinterwordspacing
+N.~Donges, ``Gradient descent in a nutshell,'' 2018. [Online]. Available:
+  \url{https://towardsdatascience.com/gradient-descent-in-a-nutshell-eaf8c18212f0}
+\BIBentrySTDinterwordspacing
+
+\bibitem{tensorflow}
+\BIBentryALTinterwordspacing
+2015. [Online]. Available: \url{https://www.tensorflow.org/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{lecun-website}
+\BIBentryALTinterwordspacing
+Y.~Lecun, ``Mnist handwritten digit database, yann lecun, corinna cortes and
+  chris burges,'' 2019. [Online]. Available:
+  \url{http://yann.lecun.com/exdb/mnist/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{lecun-98}

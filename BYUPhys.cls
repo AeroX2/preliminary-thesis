@@ -400,7 +400,7 @@
     \vfill
     by\\[\baselineskip]
     \@Author\\[\baselineskip]
-    \DegreeTitle\\[\baselineskip]
+    \@DegreeTitle\\[\baselineskip]
     \vfill
     Submitted to Macquarie University in partial fulfillment\\[\baselineskip]
     of graduation requirements for University Honors\\[2\baselineskip]

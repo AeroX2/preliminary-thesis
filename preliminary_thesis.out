@@ -24,14 +24,10 @@
 \BOOKMARK [2][-]{subsection.3.1.5}{3.1.5 Reduced dataset}{section.3.1}% 24
 \BOOKMARK [2][-]{subsection.3.1.6}{3.1.6 Reduced Epochs}{section.3.1}% 25
 \BOOKMARK [2][-]{subsection.3.1.7}{3.1.7 Convolution2D}{section.3.1}% 26
-\BOOKMARK [0][-]{chapter.4}{4 Conclusions and Future Work}{}% 27
-\BOOKMARK [1][-]{section.4.1}{4.1 Conclusions}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.2}{4.2 Future work}{chapter.4}% 29
-\BOOKMARK [0][-]{chapter.5}{5 Abbreviations}{}% 30
-\BOOKMARK [0][-]{appendix.A}{A MNIST+Noisy MNIST Results}{}% 31
-\BOOKMARK [1][-]{section.A.1}{A.1 Overview}{appendix.A}% 32
-\BOOKMARK [1][-]{section.A.2}{A.2 Name of this section}{appendix.A}% 33
-\BOOKMARK [0][-]{appendix.B}{B Fashion MNIST Results}{}% 34
-\BOOKMARK [1][-]{section.B.1}{B.1 Overview}{appendix.B}% 35
-\BOOKMARK [1][-]{section.B.2}{B.2 Name of this section}{appendix.B}% 36
-\BOOKMARK [0][-]{section*.26}{Bibliography}{}% 37
+\BOOKMARK [2][-]{subsection.3.1.8}{3.1.8 Dense layer size}{section.3.1}% 27
+\BOOKMARK [0][-]{chapter.4}{4 Conclusions and Future Work}{}% 28
+\BOOKMARK [1][-]{section.4.1}{4.1 Conclusions}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.2}{4.2 Future work}{chapter.4}% 30
+\BOOKMARK [0][-]{chapter.5}{5 Abbreviations}{}% 31
+\BOOKMARK [1][-]{section.Alph0.1}{.1 Codebase and results}{chapter.5}% 32
+\BOOKMARK [0][-]{section*.27}{Bibliography}{}% 33

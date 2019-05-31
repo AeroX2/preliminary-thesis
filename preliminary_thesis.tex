@@ -1,4 +1,4 @@
-\documentclass[a4paper,twoside,phd]{BYUPhys}
+\documentclass[a4paper,oneside,phd,etd]{BYUPhys}
 % The BYUPhys class is for producing theses and dissertations
 % in the BYU Department of Physics and Astronomy.  You can supply
 % the following optional arguments in the square brackets to
@@ -255,7 +255,7 @@ My thesis details, my efforts to try and find a way to reduce machine learning c
 \label{chap:LitReview}
 
 \section{Neural networks: explanation}
-Neural networks are a very rough simulation of how the neurons in a human brain actually work, they have been researched since the 1960s but at the time we did not have the computing power necessary to run these large neural networks and thus progress was halted until around such time as 1970-1980's when backpropagation was discovered making neural network training much more efficient and parallel computing system was also starting to kick off.
+Neural networks are a very rough simulation of how the neurons in a human brain actually work, they have been researched since the 1960s\cite{neural-network-history} but at the time we did not have the computing power necessary to run these large neural networks and thus progress was halted until around such time as 1970-1980's when backpropagation was discovered making neural network training much more efficient and parallel computing system was also starting to kick off.
 
 The most common form of a neural network in the feedforward model where the inputs are passed to the neural network and it outputs an answer. The feedforward model consists of an input layer, hidden layers and an output layer each of these layers are composed of varying amounts of neurons depending on the complexity of the data that is trying to be learned. More models of neural networks exist which aim to memorise or improve the feedforward model, however, the feedforward model is incredibly ubiquitous and is the main driving force behind machine learning in the industry. 
 
@@ -283,12 +283,12 @@ Next is neural network layers varying based on the task you want to try an accom
 \label{fig:neural_network_model}
 \end{figure}
 
-Each circle in this figure represents a neuron and each line in this figure represents a connection between 2 neurons. By manipulating the weights in the neural network, we change what each neuron calculates and outputs as part of its activation function. In doing so, we now have a framework of which for any given input, the neural network can generate any output (given the right weights), regardless of the complexity of the output\cite{nielsen_2018}. 
+Each circle in this figure represents a neuron and each line in this figure represents a connection between 2 neurons. By manipulating the weights in the neural network, we change what each neuron calculates and outputs as part of its activation function. In doing so, we now have a framework of which for any given input, the neural network can generate any output (given the right weights), regardless of the complexity of the output\cite{nielsen}. 
 
 \subsection{Training}
 The next question about neural networks is then how are the weights calculated for a given input. This is where training a neural network comes into play. The basic summary for how a neural network is trained is they are fed the input data, the error amount is calculated from the neural network output and then the weights are slowly adjusted to minimize the error rate. How this is all done is where the complexity of neural networks lie and why they take so long to train. One of the simplest algorithms that implements this is the stochastic gradient descent algorithm, which is a core component of many other machine learning algorithms like RMSprop, ADAM and AdaGrad (RMSprop being a commonly used algorithm and the one that was used in the majority of the MNIST tests). 
 
-The gradient descent or GD works by measuring the gradient and trying to find a point at which the error is the lowest. The gradient being a measure of "how much the output of a function changes if you change the inputs a little bit"\cite{towards_data_science}.
+The gradient descent or GD works by measuring the gradient and trying to find a point at which the error is the lowest. The gradient being a measure of "how much the output of a function changes if you change the inputs a little bit"\cite{towards-data-science}.
 The best way of explaining GD is with a hill climbing example, a blinded person is trying to find the highest point of a hill and so he starts by taking large steps to estimate where the steepest part of the hill is and then smaller and smaller steps until he find the top of the hill. Applying this to machine learning, the error of the output of the machine learning model is compared with the actual values that are to be expected and this is the error amount, then the weights are changed are relatively "large" amount and the error is measured again and compared to the previous error, this is the gradient. This gradient is then used to estimate how big of a "step"/how much to adjust the weights by on the next iteration.
 \begin{figure}[H]
 \centering
@@ -319,12 +319,12 @@ However, the reason for stochastic computing not being proliferated is the inher
 Secondly is that while stochastic numbers have a simple analog for multiplication, the core of stochastic numbers like the PRNG (Pseudo-random number generator) for generating the random bit stream and decoding the bit stream by sampling do not have simple gate-level analogues and this is where stochastic numbers lose their advantage.
 
 \section{Tensorflow}
-Tensorflow is a machine learning framework primarily written in Python. It was released by Google under the Apache License 2.0 on November 9th, 2015. The Tensorflow network employs the idea of creating a neural network model which is then compiled before being handed off to the appropriate processing unit be it CPU, GPU or TPU, this is in contrast to other machine learning frameworks like PyTorch that generate their models dynamically on the fly which results in a small performance hit.
+Tensorflow\cite{tensorflow} is a machine learning framework primarily written in Python. It was released by Google under the Apache License 2.0 on November 9th, 2015. The Tensorflow network employs the idea of creating a neural network model which is then compiled before being handed off to the appropriate processing unit be it CPU, GPU or TPU, this is in contrast to other machine learning frameworks like PyTorch that generate their models dynamically on the fly which results in a small performance hit.
 
 Tensorflow continues to grow in support with new frameworks like Kera that aim to simplify common operations and overall streamline the process and show no signs of stopping with a stable release only 2 months ago.
 
 \section{MNIST dataset}
-The MNIST dataset is a commonly used dataset for machine learning that consists of 70,000 images of handwritten digits (60,000 training images and 10,000 test images) and the associated labels for each of these images. The dataset is commonly chosen due to its simplicity and many frameworks support it out of the box.
+The MNIST dataset\cite{lecun-website} is a commonly used dataset for machine learning that consists of 70,000 images of handwritten digits (60,000 training images and 10,000 test images) and the associated labels for each of these images. The dataset is commonly chosen due to its simplicity and many frameworks support it out of the box.
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{pictures/mnist.png}
@@ -363,9 +363,7 @@ The stochastic model was an extension of the normal model but the first layer wa
 \begin{enumerate}
 	\item Custom Stochastic layer
 	\item Dense input layer
-	\item Dropout layer (0.2 probability)
     \item Dense layer (RELU activation)
-   	\item Dropout layer (0.2 probability)
     \item Dense layer (Softmax activation)
 \end{enumerate}
 
@@ -389,7 +387,7 @@ The following graph show the accuracy results when a normal model and a stochast
 \centering
 \includegraphics[width=12cm]{results/noise_test.png}
 \caption{Noise test results.}
-\label{fig:bitsize}
+\label{fig:noise}
 \end{figure}
 In this test, we can see compared to the normal, the stochastic model loses 0.002\% in accuracy. However when both of these pretrained models are fed the noisy MNIST dataset, the stochastic model fairs considerably better.
 
@@ -399,14 +397,14 @@ This should not have affected the results, comparing the images below shows an i
 \centering
 \includegraphics[width=8cm]{results/stochastic_layer_pass_inverted.png}
 \caption{Left is original, right is inverted stochastic layer result.}
-\label{fig:stochastic_inverted}
+\label{fig:noise_stochastic_inverted}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{results/stochastic_layer_pass_corrected.png}
 \caption{Left is original, right is corrected stochastic layer result.}
-\label{fig:stochastic}
+\label{fig:noise_stochastic}
 \end{figure}
 
 After the correction, the advantage disappears.
@@ -414,75 +412,103 @@ After the correction, the advantage disappears.
 \centering
 \includegraphics[width=12cm]{results/bitsize_corrected.png}
 \caption{Corrected noise test results.}
-\label{fig:bitsize}
+\label{fig:noise_corrected}
 \end{figure}
 
-This is further shown by inverting the test and training data for the normal model, this now shows that the results have flipped.
+This is further shown by inverting the test and training data for the normal model, this now shows that the results have flipped and that this result is a artefact of the dataset rather than the stochastic layer.
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{results/normal_inverted.png}
 \caption{Inverted noise test results.}
-\label{fig:normal_inverted}
+\label{fig:noise_normal_inverted}
 \end{figure}
 
 \subsection{Noise shuffle}
-The following graph show the accuracy results when the bit size of the stochastic layer was modified.
+The following graph shows the accuracy results when we take both the normal dataset and the noisy dataset and shuffle them together, producing a new dataset that contains normal and noisy MNIST images.
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{results/bitsize.png}
-\caption{Bit size results.}
-\label{fig:bitsize}
+\includegraphics[width=12cm]{results/noise_shuffle.png}
+\caption{Noise shuffle results.}
+\label{fig:noise_shuffle}
 \end{figure}
-From this test we can see that there is not much difference when I start increasing the number of bits, so for the rest of these tests they were done with 8 bits.
-
-However interestingly to note that above 128 bits we start seeing a large drop in accuracy, I'm unsure of the reason behind this.
+The stochastic model performs similarly to the normal model, nothing much to note here.
 
 \subsection{Reduced dataset}
-The following graph show the accuracy results when the bit size of the stochastic layer was modified.
+The following graph shows the accuracy of both the normal model and stochastic model as the size of the training datset is reduced.
 \begin{figure}[H]
 \centering
-\includegraphics[width=8cm]{results/bitsize.png}
+\includegraphics[width=12cm]{results/reduced_dataset.png}
 \caption{Bit size results.}
-\label{fig:bitsize}
+\label{fig:dataset}
 \end{figure}
-From this test we can see that there is not much difference when I start increasing the number of bits, so for the rest of these tests they were done with 8 bits.
-
-However interestingly to note that above 128 bits we start seeing a large drop in accuracy, I'm unsure of the reason behind this.
+The stochastic model has significantly worse performance as the dataset size decreases.
 
 \subsection{Reduced Epochs}
-The following graph show the accuracy results when the bit size of the stochastic layer was modified.
+The following graph shows the accuracy of the test dataset as training epochs are increased.
 \begin{figure}[H]
 \centering
-\includegraphics[width=8cm]{results/bitsize.png}
-\caption{Bit size results.}
-\label{fig:bitsize}
+\includegraphics[width=12cm]{results/epoch.png}
+\caption{Epoch results.}
+\label{fig:epoch}
 \end{figure}
-From this test we can see that there is not much difference when I start increasing the number of bits, so for the rest of these tests they were done with 8 bits.
-
-However interestingly to note that above 128 bits we start seeing a large drop in accuracy, I'm unsure of the reason behind this.
+The stochastic model performs similarly to the normal model, nothing much to note here.
 
 \subsection{Convolution2D}
-The following graph show the accuracy results when the bit size of the stochastic layer was modified.
+For this test, the model was changed to use a convolution model of the following form
+\begin{enumerate}
+	\item Conv2D(32 neurons, (3x3 kernel), RELU activation)
+	\item MaxPooling2D((2x2 kernel))
+	\item Conv2D(64 neurons, (3x3 kernel), RELU activation)
+	\item MaxPooling2D((2x2 kernel))
+	\item Conv2D(64 neurons, (3x3 kernel), RELU activation)
+	\item Flatten layer
+	\item Dense layer (64 neurons, RELU activation)
+	\item Dense layer (10 neurons)
+\end{enumerate}
+With the stochastic model being
+\begin{enumerate}
+	\item StochasticLayer(728 neurons)
+	\item Reshape
+	\item Conv2D(32 neurons, (3x3 kernel), RELU activation)
+	\item MaxPooling2D((2x2 kernel))
+	\item Conv2D(64 neurons, (3x3 kernel), RELU activation)
+	\item MaxPooling2D((2x2 kernel))
+	\item Conv2D(64 neurons, (3x3 kernel), RELU activation)
+	\item Flatten layer
+	\item Dense layer (64 neurons, RELU activation)
+	\item Dense layer (10 neurons)
+\end{enumerate}
+
 \begin{figure}[H]
 \centering
-\includegraphics[width=8cm]{results/bitsize.png}
-\caption{Bit size results.}
-\label{fig:bitsize}
+\includegraphics[width=8cm]{results/conv2d.png}
+\caption{Conv2D results.}
+\label{fig:conv2d}
 \end{figure}
-From this test we can see that there is not much difference when I start increasing the number of bits, so for the rest of these tests they were done with 8 bits.
+The stochastic model performs similarly to the normal model, nothing much to note here.
 
-However interestingly to note that above 128 bits we start seeing a large drop in accuracy, I'm unsure of the reason behind this.
+\subsection{Dense layer size}
+The following graph shows the accuracy of the test dataset as the size of the hidden dense layers neurons are increased.
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{results/dense_layer.png}
+\caption{Dense layer results.}
+\label{fig:denselayer}
+\end{figure}
+
+This is by far the most interesting results so far and thus the results above are 30 samples instead of the usual 20 samples. The results show that for hidden dense layer sizes of 32 and below the stochastic layer fairs much better, however I'm still unsure if this is because of the stochastic layer or another artefact of the dataset, I will continue to research.
 
 \chapter{Conclusions and Future Work}
 \label{chap:Conclusions}
 
 \section{Conclusions}
 \label{sec:ConclusionsConclusions}
-In conclusion, TODO
+In conclusion, it seems that the stochastic layer has minimum impact on the performance of neural networks in all the tests I have done and in some case worse performance. 
 
 \section{Future work}
 \label{sec:ConclustionsFuturework}
-Future work, TODO
+My next steps for this project is to look into alternative ways of trying to use the stochastic network or another representation that might yield better results.
+It is notable that MNIST may not provide the complexity that I'm looking for, especially after the inverted artefact. My next steps for this is to look into more complicated datasets like CIFAR100 to see if I can find performance in that area.
 
 \clearemptydoublepage
 \chapter{Abbreviations}
@@ -501,16 +527,8 @@ NN \> Neural network \\
 % \printindex
 
 \appendix
-\chapter{MNIST+Noisy MNIST Results}
-\section{Overview}
-This is the raw data for the results of MNIST along with the result comparisons to Noisy MNIST
-\section{Name of this section}
-TODO
-\chapter{Fashion MNIST Results}
-\section{Overview}
-This is the raw data for the results of fashion MNIST.
-\section{Name of this section}
-TODO
+\section{Codebase and results}
+\url{https://github.com/AeroX2/stochastic-demo}
 
 %\input{Bibliography/biblio3}
 \bibliographystyle{IEEEtran}
