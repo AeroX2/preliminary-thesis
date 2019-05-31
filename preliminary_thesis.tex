@@ -147,8 +147,8 @@
 %
 % For Senior and honors this is the year and month that you submit the thesis
 % For Masters and PhD, this is your graduation date
-  \Year{2020}
-  \Month{October 22,}
+  \Year{2019}
+  \Month{June 7th,}
   \Author{James Ridey}
 
 % If you have a long title, split it between two lines. The \TitleBottom field defines the second line
@@ -178,7 +178,7 @@
 % The title of the department representative
 %  \DepRepTitle{Chair}
   \Statement{
-    \noindent I, James Ridey, declare that this report, submitted as part of the requirement for the award of Bachelor of Engineering in the School of Engineering, Macquarie University, is entirely my own work unless otherwise referenced or acknowledged. This document has not been submitted for qualification or assessment an any academic institution.
+    \noindent I, James Ridey, declare that this report, submitted as part of the requirement for the award of Bachelor of Engineering in the School of Engineering, Macquarie University, is entirely my own work unless otherwise referenced or acknowledged. This document has not been submitted for qualification or assessment at any academic institution.
     \vspace{0.5cm}
 
     \noindent     Student's Name: James Ridey
@@ -195,7 +195,7 @@
 % The text of your abstract
 \Abstract{
 \vspace{-1.5 cm}
-Neural networks considered a core foundation of machine learning, has recently ballooned into a large framework that requires vast amounbts of computing resources and time. Here, we examine how to improve these networks, hoping to achieve networks that can calculate the same result with less training time and/or resources using ideas such as stochastic numbers and probalistic results.
+Neural networks considered a core foundation of machine learning, has recently ballooned into a large framework that requires vast amounts of computing resources and time. Here, we examine how to improve these networks, hoping to achieve networks that can calculate the same result with less training time and/or resources using ideas such as stochastic numbers and probabilistic results.
 }
 
 
@@ -247,16 +247,19 @@ Neural networks considered a core foundation of machine learning, has recently b
 
 
 \section{Neural networks: introduction}
-Neural networks are the core structure of what many believe to be the next step in computing, machine learning. 
+Neural networks are the core structure of what many believe to be the next step in computing, machine learning. We are starting to see machine learning used to solve problems that originally were only able to be solved by people. However, all this machine learning comes at a cost, machine learning needs vast amounts of data to learn and thus large amounts of computing resources, electricity, time and even the best machine learning models work within a narrow, controlled set of inputs, anything outside this "range" are misclassified, in other words, machine learnings models are sensitive to noise and not general enough.
 
+My thesis details, my efforts to try and find a way to reduce machine learning complexity or finding a way to make machine learning models more tolerant to noise. The preliminary work done in this thesis relates to trying to use stochastic numbers with the Tensorflow machine learning framework on the MNIST dataset to try and find ways to reduce complexity.
 
 \chapter{Background and Related Work}
 \label{chap:LitReview}
 
 \section{Neural networks: explanation}
-Neural networks are a very rough simulation of how the neurons in a human brain actually work. The most common form of a neural network in the feed forward model where the inputs are passed to the neural network and it outputs an answer. The feed forward model consists of an input layer, hidden layers and an output layer each of these layers are composed of varying amounts of neurons depending on the complexity of the data that is trying to be learned. More models of neural networks exist which aim to memorise or improve the feed forward model, however the feed forward model is incredibly ubiquidious and is the main driving force behind machine learning in the industry. 
+Neural networks are a very rough simulation of how the neurons in a human brain actually work, they have been researched since the 1960s but at the time we did not have the computing power necessary to run these large neural networks and thus progress was halted until around such time as 1970-1980's when backpropagation was discovered making neural network training much more efficient and parallel computing system was also starting to kick off.
 
-To understand what each layer in a neural network is doing, it is first necessary to understand what a neuron is doing. A neuron is comprised of inputs, a set of weights and one output, as shown below.
+The most common form of a neural network in the feedforward model where the inputs are passed to the neural network and it outputs an answer. The feedforward model consists of an input layer, hidden layers and an output layer each of these layers are composed of varying amounts of neurons depending on the complexity of the data that is trying to be learned. More models of neural networks exist which aim to memorise or improve the feedforward model, however, the feedforward model is incredibly ubiquitous and is the main driving force behind machine learning in the industry. 
+
+To understand what each layer in a neural network is doing, it is first necessary to understand what a neuron is doing. A neuron is comprised of inputs, a set of weights, one output and an activation function, as shown below.
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{pictures/neuron_model.png}
@@ -272,7 +275,7 @@ Neurons are fed a set of data through its inputs which are multiplied by a speci
 \label{fig:sigmoid}
 \end{figure}
 
-Next is neural network layers where the most common layer is the dense layer, in this layer every neuron connects to every other neuron in the previous layer.
+Next is neural network layers varying based on the task you want to try an accomplish, some examples include convolutional layers which attempt to use neural networks on squares of pixels, dropout layers which randomly pick weights to drop to try and reduce overfitting and the most common layer used to most machine learning models, is the dense layer, in this layer every neuron connects to every other neuron in the previous layer.
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{pictures/neural_network_model.png}
@@ -280,47 +283,206 @@ Next is neural network layers where the most common layer is the dense layer, in
 \label{fig:neural_network_model}
 \end{figure}
 
-Each circle in this figure represents a neuron and each line in this figure represents a connection between these 2 neurons. By manipulating the weights in the neural network, we change what each neuron calculates and outputs as part of its activation function. In doing so, we now have a framework of which for any given input, the neural network can generate any output (given the right weights), regardless of the complexity of the output\cite{nielsen_2018}. 
+Each circle in this figure represents a neuron and each line in this figure represents a connection between 2 neurons. By manipulating the weights in the neural network, we change what each neuron calculates and outputs as part of its activation function. In doing so, we now have a framework of which for any given input, the neural network can generate any output (given the right weights), regardless of the complexity of the output\cite{nielsen_2018}. 
 
 \subsection{Training}
-The next question about neural networks are then how are the weights trained for a given input.
-TODO
+The next question about neural networks is then how are the weights calculated for a given input. This is where training a neural network comes into play. The basic summary for how a neural network is trained is they are fed the input data, the error amount is calculated from the neural network output and then the weights are slowly adjusted to minimize the error rate. How this is all done is where the complexity of neural networks lie and why they take so long to train. One of the simplest algorithms that implements this is the stochastic gradient descent algorithm, which is a core component of many other machine learning algorithms like RMSprop, ADAM and AdaGrad (RMSprop being a commonly used algorithm and the one that was used in the majority of the MNIST tests). 
 
-\section{Stochastic numbers}
+The gradient descent or GD works by measuring the gradient and trying to find a point at which the error is the lowest. The gradient being a measure of "how much the output of a function changes if you change the inputs a little bit"\cite{towards_data_science}.
+The best way of explaining GD is with a hill climbing example, a blinded person is trying to find the highest point of a hill and so he starts by taking large steps to estimate where the steepest part of the hill is and then smaller and smaller steps until he find the top of the hill. Applying this to machine learning, the error of the output of the machine learning model is compared with the actual values that are to be expected and this is the error amount, then the weights are changed are relatively "large" amount and the error is measured again and compared to the previous error, this is the gradient. This gradient is then used to estimate how big of a "step"/how much to adjust the weights by on the next iteration.
+\begin{figure}[H]
+\centering
+\includegraphics[width=6cm]{pictures/gradient.png}
+\caption{Stochastic gradient example.
+Y-Axis represents accuracy rate}
+\label{fig:gradient}
+\end{figure}
+
+However in realities, there is much more dimensions to a machine learning model and secondly there is not just one point that is the highest but multiple hills of varying heights, this is one of the many reason why machine learning is hard. You can create simple machine learning algorithms that find a maximum point but not the global maximum point or the global maxima, you can also try and adjust how much you step by each amount but the best way, which requires all the computation power is a small stepping amount which tries all points on the "hills". 
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{pictures/global_minima.png}
+\caption{Global maxima example.
+Y-Axis represents accuracy rate}
+\label{fig:global_minima}
+\end{figure}
+
+\section{Stochastic computing}
+Stochastic computing is a branch of computing that relies on probabilistic bit streams to calculate numbers, often relying on simple bit-wise operations. Every number in a stochastic computer is arranged as a probability of the ones and zeros in a continuous binary number stream. 
+
+\subsection{Advantages of stochastic numbers}
+There are 2 major advantages with this technique, one is that the system is extremely resistant to noise, flipping multiple bits in the stream will have very little effect or will only change the number minorly. The other major advantage is that certain operations have a simpler solution, for example in terms of multiplication on a conventional computer this would be an $n^2$ operation, however, on a stochastic computer, this is accomplished with an AND gate at a cost of $n$.
+
+\subsection{Disadvantages of stochastic numbers}
+However, the reason for stochastic computing not being proliferated is the inherent weakness which is the randomness of stochastic numbers. Stochastic numbers can never truly represent the number they are trying to calculate and thus need a large amount of sampling to "zone in" on the number being calculated.
+
+Secondly is that while stochastic numbers have a simple analog for multiplication, the core of stochastic numbers like the PRNG (Pseudo-random number generator) for generating the random bit stream and decoding the bit stream by sampling do not have simple gate-level analogues and this is where stochastic numbers lose their advantage.
 
 \section{Tensorflow}
-Tensorflow is a machine learning framework primarily written in Python. It was released by Google under the Apache License 2.0 on November 9th, 2015. The Tensorflow network employs the idea of creating a neural network model which is then compiled before being handed off to the appropiate processing unit be it CPU or GPU, this is in contrast to other machine learning frameworks like PyTorch that generate their models dynamically on the fly which results in a small performance hit.
+Tensorflow is a machine learning framework primarily written in Python. It was released by Google under the Apache License 2.0 on November 9th, 2015. The Tensorflow network employs the idea of creating a neural network model which is then compiled before being handed off to the appropriate processing unit be it CPU, GPU or TPU, this is in contrast to other machine learning frameworks like PyTorch that generate their models dynamically on the fly which results in a small performance hit.
 
 Tensorflow continues to grow in support with new frameworks like Kera that aim to simplify common operations and overall streamline the process and show no signs of stopping with a stable release only 2 months ago.
 
 \section{MNIST dataset}
-The MNIST dataset is a commonly used dataset for machine learning that consists of 70,000 images of handwritten digits (60,000 training images and 10,000 test images) and the associated labels for each of these images. The dataset is commonly choosen due to its simplicity and many frameworks support it out of the box.
+The MNIST dataset is a commonly used dataset for machine learning that consists of 70,000 images of handwritten digits (60,000 training images and 10,000 test images) and the associated labels for each of these images. The dataset is commonly chosen due to its simplicity and many frameworks support it out of the box.
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{pictures/mnist.png}
+\caption{Samples of the MNIST dataset.}
+\label{fig:mnist}
+\end{figure}
 
-Another common reason that MNIST is choosen is to demonstrate the accuracy of neural networks over more traditional statistical analysis such as linear classifiers and K-nearest neighbours, both of which score around an error rate of 12\% and 5\% respectively\cite{lecun-98} as compared to a simple neural network of 3 layers which can score around 3.05\%\cite{lecun-98}.
+Another common reason that MNIST is chosen is to demonstrate the accuracy of neural networks over more traditional statistical analysis such as linear classifiers and K-nearest neighbours, both of which score around an error rate of 12\% and 5\% respectively\cite{lecun-98} as compared to a simple neural network of 3 layers which can score around 3.05\%\cite{lecun-98}.
 
-However this dataset is not without its faults, there are quite a number of images that are dubiously labeled.
+However this dataset is not without its faults, there are quite a number of images that are dubiously labelled.
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{pictures/mnist_incorrect.png}
-\caption{Samples of ambigious digits.}
+\caption{Samples of ambiguous digits.}
 \label{fig:incorrect_mnist}
 \end{figure}
-The dataset is also often constructed as too small and too simple, consisting of only 70,000 images of greyscale images. Compared to datasets such as CIFAR10 which has the same amount of images but 32x32 color images or another dataset like ImageNet consisting of 1,331,167 images, MNIST is certainly behind. However MNIST has been used and is continued to be used as a way to quickly validate a machine learning algorithm before moving on to larger more complicated datasets that take much more time to compute.
+The dataset is also often constructed as too small and too simple, consisting of only 70,000 images of greyscale images. Compared to datasets such as CIFAR10 which has the same amount of images but 32x32 colour images or another dataset like ImageNet consisting of 1,331,167 images, MNIST is certainly behind. However, MNIST has been used and is continued to be used as a way to quickly validate a machine learning algorithm before moving on to larger more complicated datasets that take much more time to compute.
 
 
 \chapter{Preliminary results}
+
 \section{Stochastic numbers}
+\subsection{Stochastic numbers: Abstract}
+These preliminary results are based upon the idea of if we could use stochastic numbers as a way of improving neural networks, whether that is through the reduction or datasets, noise tolerance, computation complexity or anything that would give it some edge over a more traditional network.
+The idea mainly comes from spiking neural networks and more theories about how the human brain works on probabilistic methods rather than hardcoded logic.
+
+All of these results, were trained with the MNIST dataset, 20 repetitions using a normal model with the following structure.
+\begin{enumerate}
+	\item Dense input layer
+	\item Dropout layer (0.2 probability)
+    \item Dense layer (RELU activation)
+   	\item Dropout layer (0.2 probability)
+    \item Dense layer (Softmax activation)
+\end{enumerate}
+The stochastic model was an extension of the normal model but the first layer was the custom Stochastic layer.
+\begin{enumerate}
+	\item Custom Stochastic layer
+	\item Dense input layer
+	\item Dropout layer (0.2 probability)
+    \item Dense layer (RELU activation)
+   	\item Dropout layer (0.2 probability)
+    \item Dense layer (Softmax activation)
+\end{enumerate}
+
+TODO, talk about results of stochastic numbers compared to the normal model
+
+\subsection{Bit size}
+The following graph show the accuracy results when the bit size of the stochastic layer was modified.
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{results/bitsize.png}
+\caption{Bit size results.}
+\label{fig:bitsize}
+\end{figure}
+From this test we can see that there is not much difference when I start increasing the number of bits, so for the rest of these tests they were done with 8 bits.
+
+However interestingly to note that above 128 bits we start seeing a large drop in accuracy, I'm unsure of the reason behind this.
+
+\subsection{Noise tests}
+The following graph show the accuracy results when a normal model and a stochastic model are trained with the MNIST dataset and then fed the testing dataset from the Noisy MNIST dataset.
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{results/noise_test.png}
+\caption{Noise test results.}
+\label{fig:bitsize}
+\end{figure}
+In this test, we can see compared to the normal, the stochastic model loses 0.002\% in accuracy. However when both of these pretrained models are fed the noisy MNIST dataset, the stochastic model fairs considerably better.
+
+However upon further consideration this seems to be an artifact of the dataset, after some investigation there was a slight mistake in the custom stochastic layer which meant that all the values in the training and testing datsets for the stochastic layer were inverted. 
+This should not have affected the results, comparing the images below shows an image that has been passed through the stochastic layer and both the mistake and fixed version shows minor differences other than the inversion.
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{results/stochastic_layer_pass_inverted.png}
+\caption{Left is original, right is inverted stochastic layer result.}
+\label{fig:stochastic_inverted}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{results/stochastic_layer_pass_corrected.png}
+\caption{Left is original, right is corrected stochastic layer result.}
+\label{fig:stochastic}
+\end{figure}
+
+After the correction, the advantage disappears.
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{results/bitsize_corrected.png}
+\caption{Corrected noise test results.}
+\label{fig:bitsize}
+\end{figure}
+
+This is further shown by inverting the test and training data for the normal model, this now shows that the results have flipped.
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{results/normal_inverted.png}
+\caption{Inverted noise test results.}
+\label{fig:normal_inverted}
+\end{figure}
+
+\subsection{Noise shuffle}
+The following graph show the accuracy results when the bit size of the stochastic layer was modified.
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{results/bitsize.png}
+\caption{Bit size results.}
+\label{fig:bitsize}
+\end{figure}
+From this test we can see that there is not much difference when I start increasing the number of bits, so for the rest of these tests they were done with 8 bits.
+
+However interestingly to note that above 128 bits we start seeing a large drop in accuracy, I'm unsure of the reason behind this.
+
+\subsection{Reduced dataset}
+The following graph show the accuracy results when the bit size of the stochastic layer was modified.
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{results/bitsize.png}
+\caption{Bit size results.}
+\label{fig:bitsize}
+\end{figure}
+From this test we can see that there is not much difference when I start increasing the number of bits, so for the rest of these tests they were done with 8 bits.
+
+However interestingly to note that above 128 bits we start seeing a large drop in accuracy, I'm unsure of the reason behind this.
+
+\subsection{Reduced Epochs}
+The following graph show the accuracy results when the bit size of the stochastic layer was modified.
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{results/bitsize.png}
+\caption{Bit size results.}
+\label{fig:bitsize}
+\end{figure}
+From this test we can see that there is not much difference when I start increasing the number of bits, so for the rest of these tests they were done with 8 bits.
+
+However interestingly to note that above 128 bits we start seeing a large drop in accuracy, I'm unsure of the reason behind this.
+
+\subsection{Convolution2D}
+The following graph show the accuracy results when the bit size of the stochastic layer was modified.
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{results/bitsize.png}
+\caption{Bit size results.}
+\label{fig:bitsize}
+\end{figure}
+From this test we can see that there is not much difference when I start increasing the number of bits, so for the rest of these tests they were done with 8 bits.
+
+However interestingly to note that above 128 bits we start seeing a large drop in accuracy, I'm unsure of the reason behind this.
 
 \chapter{Conclusions and Future Work}
 \label{chap:Conclusions}
 
-
 \section{Conclusions}
 \label{sec:ConclusionsConclusions}
+In conclusion, TODO
 
-This
-
-
+\section{Future work}
+\label{sec:ConclustionsFuturework}
+Future work, TODO
 
 \clearemptydoublepage
 \chapter{Abbreviations}
@@ -329,6 +491,7 @@ This
 \begin{tabbing}
 
 AWGN \qquad \qquad \= Additive White Gaussian Noise\\
+SGD \> Stochastic Gradient Descent\\
 SC \> Stochastic numbers\\
 NN \> Neural network \\
 \end{tabbing}
@@ -338,22 +501,21 @@ NN \> Neural network \\
 % \printindex
 
 \appendix
-\chapter{name of appendix A}
+\chapter{MNIST+Noisy MNIST Results}
 \section{Overview}
-here is the Overview of appendix A ...
+This is the raw data for the results of MNIST along with the result comparisons to Noisy MNIST
 \section{Name of this section}
-here is the content of this section ...
-\chapter{name of appendix B}
+TODO
+\chapter{Fashion MNIST Results}
 \section{Overview}
-here is the Overview of appendix B ...
+This is the raw data for the results of fashion MNIST.
 \section{Name of this section}
-here is the content of this section ...
+TODO
 
 %\input{Bibliography/biblio3}
 \bibliographystyle{IEEEtran}
 %\bibliographystyle{acm}
 \bibliography{my_reference}
 %\bibliography{Bibliography/biblio4}
-
 
 \end{document}
