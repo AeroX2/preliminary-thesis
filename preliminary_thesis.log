@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.16)  31 MAY 2019 23:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.16)  2 JUN 2019 13:13
 entering extended mode
 **./preliminary_thesis.tex
 (preliminary_thesis.tex
@@ -428,7 +428,7 @@ Overfull \hbox (9.40733pt too wide) in paragraph at lines 217--217
  [] 
  []
 
-<MQlogo_stacked.pdf, id=139, 219.12566pt x 208.59329pt>
+<MQlogo_stacked.pdf, id=135, 219.12566pt x 208.59329pt>
 File: MQlogo_stacked.pdf Graphic file (type pdf)
 <use MQlogo_stacked.pdf>
 Package pdftex.def Info: MQlogo_stacked.pdf  used on input line 217.
@@ -496,12 +496,12 @@ Chapter 1.
 
 ]
 Chapter 2.
-<pictures/neuron_model.png, id=273, 357.7365pt x 172.36395pt>
+<pictures/neuron_model.png, id=268, 357.7365pt x 172.36395pt>
 File: pictures/neuron_model.png Graphic file (type png)
 <use pictures/neuron_model.png>
 Package pdftex.def Info: pictures/neuron_model.png  used on input line 265.
 (pdftex.def)             Requested size: 227.62204pt x 109.6708pt.
-<pictures/sigmoid.png, id=274, 77.088pt x 51.3117pt>
+<pictures/sigmoid.png, id=269, 77.088pt x 51.3117pt>
 File: pictures/sigmoid.png Graphic file (type png)
 <use pictures/sigmoid.png>
 Package pdftex.def Info: pictures/sigmoid.png  used on input line 273.
@@ -509,40 +509,40 @@ Package pdftex.def Info: pictures/sigmoid.png  used on input line 273.
 [2
 
  <./pictures/neuron_model.png (PNG copy)>]
-<pictures/neural_network_model.png, id=281, 1204.5pt x 1448.41125pt>
+<pictures/neural_network_model.png, id=276, 1204.5pt x 1448.41125pt>
 File: pictures/neural_network_model.png Graphic file (type png)
 <use pictures/neural_network_model.png>
 Package pdftex.def Info: pictures/neural_network_model.png  used on input line 
 281.
 (pdftex.def)             Requested size: 227.62204pt x 273.69814pt.
  [3 <./pictures/sigmoid.png>]
-<pictures/gradient.png, id=289, 163.5711pt x 142.6128pt>
+<pictures/gradient.png, id=284, 163.5711pt x 142.6128pt>
 File: pictures/gradient.png Graphic file (type png)
 <use pictures/gradient.png>
 Package pdftex.def Info: pictures/gradient.png  used on input line 295.
 (pdftex.def)             Requested size: 170.71652pt x 148.8491pt.
 
 [4 <./pictures/neural_network_model.png>]
-<pictures/global_minima.png, id=296, 316.7835pt x 188.50426pt>
+<pictures/global_minima.png, id=291, 316.7835pt x 188.50426pt>
 File: pictures/global_minima.png Graphic file (type png)
 <use pictures/global_minima.png>
 Package pdftex.def Info: pictures/global_minima.png  used on input line 304.
 (pdftex.def)             Requested size: 284.52756pt x 169.30997pt.
  [5 <./pictures/gradient.png>]
 [6 <./pictures/global_minima.png>]
-<pictures/mnist.png, id=313, 596.2275pt x 362.35374pt>
+<pictures/mnist.png, id=308, 596.2275pt x 362.35374pt>
 File: pictures/mnist.png Graphic file (type png)
 <use pictures/mnist.png>
 Package pdftex.def Info: pictures/mnist.png  used on input line 330.
 (pdftex.def)             Requested size: 227.62204pt x 138.33722pt.
-<pictures/mnist_incorrect.png, id=316, 383.4325pt x 369.38pt>
+<pictures/mnist_incorrect.png, id=311, 383.4325pt x 369.38pt>
 File: pictures/mnist_incorrect.png Graphic file (type png)
 <use pictures/mnist_incorrect.png>
 Package pdftex.def Info: pictures/mnist_incorrect.png  used on input line 340.
 (pdftex.def)             Requested size: 227.62204pt x 219.285pt.
  [7 <./pictures/mnist.png>] [8 <./pictures/mnist_incorrect.png (PNG copy)>]
 Chapter 3.
-<results/bitsize.png, id=329, 602.25pt x 372.39125pt>
+<results/bitsize.png, id=324, 602.25pt x 372.39125pt>
 File: results/bitsize.png Graphic file (type png)
 <use results/bitsize.png>
 Package pdftex.def Info: results/bitsize.png  used on input line 376.
@@ -550,61 +550,61 @@ Package pdftex.def Info: results/bitsize.png  used on input line 376.
 [9
 
 ]
-<results/noise_test.png, id=343, 725.71124pt x 448.67625pt>
+<results/noise_test.png, id=338, 725.71124pt x 448.67625pt>
 File: results/noise_test.png Graphic file (type png)
 <use results/noise_test.png>
 Package pdftex.def Info: results/noise_test.png  used on input line 388.
 (pdftex.def)             Requested size: 341.43306pt x 211.09694pt.
  [10 <./results/bitsize.png>]
-<results/stochastic_layer_pass_inverted.png, id=349, 462.528pt x 346.896pt>
+<results/stochastic_layer_pass_inverted.png, id=344, 462.528pt x 346.896pt>
 File: results/stochastic_layer_pass_inverted.png Graphic file (type png)
 <use results/stochastic_layer_pass_inverted.png>
 Package pdftex.def Info: results/stochastic_layer_pass_inverted.png  used on in
 put line 398.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
-<results/stochastic_layer_pass_corrected.png, id=350, 462.528pt x 346.896pt>
+<results/stochastic_layer_pass_corrected.png, id=345, 462.528pt x 346.896pt>
 File: results/stochastic_layer_pass_corrected.png Graphic file (type png)
 <use results/stochastic_layer_pass_corrected.png>
 Package pdftex.def Info: results/stochastic_layer_pass_corrected.png  used on i
 nput line 405.
 (pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
  [11 <./results/noise_test.png> <./results/stochastic_layer_pass_inverted.png>]
-<results/bitsize_corrected.png, id=358, 725.71124pt x 448.67625pt>
+<results/bitsize_corrected.png, id=353, 725.71124pt x 448.67625pt>
 File: results/bitsize_corrected.png Graphic file (type png)
 <use results/bitsize_corrected.png>
 Package pdftex.def Info: results/bitsize_corrected.png  used on input line 413.
 
 (pdftex.def)             Requested size: 341.43306pt x 211.09694pt.
-<results/normal_inverted.png, id=359, 725.71124pt x 448.67625pt>
+<results/normal_inverted.png, id=354, 725.71124pt x 448.67625pt>
 File: results/normal_inverted.png Graphic file (type png)
 <use results/normal_inverted.png>
 Package pdftex.def Info: results/normal_inverted.png  used on input line 421.
 (pdftex.def)             Requested size: 341.43306pt x 211.09694pt.
  [12 <./results/stochastic_layer_pass_corrected.png> <./results/bitsize_correct
 ed.png>]
-<results/noise_shuffle.png, id=366, 602.25pt x 372.39125pt>
+<results/noise_shuffle.png, id=361, 602.25pt x 372.39125pt>
 File: results/noise_shuffle.png Graphic file (type png)
 <use results/noise_shuffle.png>
 Package pdftex.def Info: results/noise_shuffle.png  used on input line 430.
 (pdftex.def)             Requested size: 341.43306pt x 211.12877pt.
-<results/reduced_dataset.png, id=367, 804.00375pt x 496.85625pt>
+<results/reduced_dataset.png, id=362, 804.00375pt x 496.85625pt>
 File: results/reduced_dataset.png Graphic file (type png)
 <use results/reduced_dataset.png>
 Package pdftex.def Info: results/reduced_dataset.png  used on input line 440.
 (pdftex.def)             Requested size: 341.43306pt x 210.99811pt.
  [13 <./results/normal_inverted.png> <./results/noise_shuffle.png>]
-<results/epoch.png, id=374, 860.21375pt x 531.9875pt>
+<results/epoch.png, id=369, 860.21375pt x 531.9875pt>
 File: results/epoch.png Graphic file (type png)
 <use results/epoch.png>
 Package pdftex.def Info: results/epoch.png  used on input line 450.
 (pdftex.def)             Requested size: 341.43306pt x 211.15962pt.
  [14 <./results/reduced_dataset.png>] [15 <./results/epoch.png>]
-<results/conv2d.png, id=396, 1379.1525pt x 852.18375pt>
+<results/conv2d.png, id=391, 1379.1525pt x 852.18375pt>
 File: results/conv2d.png Graphic file (type png)
 <use results/conv2d.png>
 Package pdftex.def Info: results/conv2d.png  used on input line 484.
 (pdftex.def)             Requested size: 227.62204pt x 140.64325pt.
-<results/dense_layer.png, id=397, 1144.275pt x 707.64375pt>
+<results/dense_layer.png, id=392, 1144.275pt x 707.64375pt>
 File: results/dense_layer.png Graphic file (type png)
 <use results/dense_layer.png>
 Package pdftex.def Info: results/dense_layer.png  used on input line 494.
@@ -628,40 +628,27 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 539.
  (preliminary_thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 539.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 539.
-
-
-Package rerunfilecheck Warning: File `preliminary_thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `preliminary_thesis.out':
-(rerunfilecheck)             Before: 1F19B4327DC73CA5ACD59910B63CBB3C;2245
-(rerunfilecheck)             After:  02E294B927F99486E19DC33A5C1F2A10;2184.
+Package rerunfilecheck Info: File `preliminary_thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 02E294B927F99486E19DC33A5C1F2A10;2184.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 539.
  ) 
 Here is how much of TeX's memory you used:
- 7976 strings out of 492902
- 119294 string characters out of 3133530
+ 7973 strings out of 492902
+ 119254 string characters out of 3133530
  213951 words of memory out of 3000000
- 11641 multiletter control sequences out of 15000+200000
+ 11640 multiletter control sequences out of 15000+200000
  11408 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,12n,43p,805b,410s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{bm:DepAp.0} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{bm:Copyright.0} has been referenced but does not ex
-ist, replaced by a fixed one
-
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmti12.pfb>
-Output written on preliminary_thesis.pdf (28 pages, 862872 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmti12.pfb>
+Output written on preliminary_thesis.pdf (28 pages, 861852 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 119 named destinations out of 1000 (max. 500000)
- 368 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 479 PDF objects out of 1000 (max. 8388607)
+ 117 named destinations out of 1000 (max. 500000)
+ 360 words of extra memory for PDF output out of 10000 (max. 10000000)
 

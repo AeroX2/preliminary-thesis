@@ -54,7 +54,7 @@
 % to http://en.wikibooks.org/wiki/LaTeX/Packages/Listings for
 % more information.
 %
-% For theorems, propositions, proofs and assumtions use this
+% For theorems, propositions, proofs and assumptions use this
 % package
 % \usepackage{amsthm}
 % For more information refer to the following website
@@ -289,7 +289,7 @@ Each circle in this figure represents a neuron and each line in this figure repr
 The next question about neural networks is then how are the weights calculated for a given input. This is where training a neural network comes into play. The basic summary for how a neural network is trained is they are fed the input data, the error amount is calculated from the neural network output and then the weights are slowly adjusted to minimize the error rate. How this is all done is where the complexity of neural networks lie and why they take so long to train. One of the simplest algorithms that implements this is the stochastic gradient descent algorithm, which is a core component of many other machine learning algorithms like RMSprop, ADAM and AdaGrad (RMSprop being a commonly used algorithm and the one that was used in the majority of the MNIST tests). 
 
 The gradient descent or GD works by measuring the gradient and trying to find a point at which the error is the lowest. The gradient being a measure of "how much the output of a function changes if you change the inputs a little bit"\cite{towards-data-science}.
-The best way of explaining GD is with a hill climbing example, a blinded person is trying to find the highest point of a hill and so he starts by taking large steps to estimate where the steepest part of the hill is and then smaller and smaller steps until he find the top of the hill. Applying this to machine learning, the error of the output of the machine learning model is compared with the actual values that are to be expected and this is the error amount, then the weights are changed are relatively "large" amount and the error is measured again and compared to the previous error, this is the gradient. This gradient is then used to estimate how big of a "step"/how much to adjust the weights by on the next iteration.
+The best way of explaining GD is with a hill climbing example, a blinded person is trying to find the highest point of a hill and so he starts by taking large steps to estimate where the steepest part of the hill is and then smaller and smaller steps until he finds the top of the hill. Applying this to machine learning, the error of the output of the machine learning model is compared with the actual values that are to be expected and this is the error amount, then the weights are changed are relatively "large" amount and the error is measured again and compared to the previous error, this is the gradient. This gradient is then used to estimate how big of a "step"/how much to adjust the weights by on the next iteration.
 \begin{figure}[H]
 \centering
 \includegraphics[width=6cm]{pictures/gradient.png}
@@ -298,7 +298,7 @@ Y-Axis represents accuracy rate}
 \label{fig:gradient}
 \end{figure}
 
-However in realities, there is much more dimensions to a machine learning model and secondly there is not just one point that is the highest but multiple hills of varying heights, this is one of the many reason why machine learning is hard. You can create simple machine learning algorithms that find a maximum point but not the global maximum point or the global maxima, you can also try and adjust how much you step by each amount but the best way, which requires all the computation power is a small stepping amount which tries all points on the "hills". 
+However in realities, there are much more dimensions to a machine learning model and secondly, there is not just one point that is the highest but multiple hills of varying heights, this is one of the many reasons why machine learning is hard. You can create simple machine learning algorithms that find a maximum point but not the global maximum point or the global maxima, you can also try and adjust how much you step by each amount but the best way, which requires all the computation power is a small stepping amount which tries all points on the "hills". 
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{pictures/global_minima.png}
@@ -351,18 +351,18 @@ The dataset is also often constructed as too small and too simple, consisting of
 These preliminary results are based upon the idea of if we could use stochastic numbers as a way of improving neural networks, whether that is through the reduction or datasets, noise tolerance, computation complexity or anything that would give it some edge over a more traditional network.
 The idea mainly comes from spiking neural networks and more theories about how the human brain works on probabilistic methods rather than hardcoded logic.
 
-All of these results, were trained with the MNIST dataset, 20 repetitions using a normal model with the following structure.
+All of these results were trained with the MNIST dataset, 20 repetitions using a normal model with the following structure.
 \begin{enumerate}
-	\item Dense input layer
-	\item Dropout layer (0.2 probability)
+    \item Dense input layer
+    \item Dropout layer (0.2 probability)
     \item Dense layer (RELU activation)
-   	\item Dropout layer (0.2 probability)
+    \item Dropout layer (0.2 probability)
     \item Dense layer (Softmax activation)
 \end{enumerate}
 The stochastic model was an extension of the normal model but the first layer was the custom Stochastic layer.
 \begin{enumerate}
-	\item Custom Stochastic layer
-	\item Dense input layer
+    \item Custom Stochastic layer
+    \item Dense input layer
     \item Dense layer (RELU activation)
     \item Dense layer (Softmax activation)
 \end{enumerate}
@@ -377,21 +377,21 @@ The following graph show the accuracy results when the bit size of the stochasti
 \caption{Bit size results.}
 \label{fig:bitsize}
 \end{figure}
-From this test we can see that there is not much difference when I start increasing the number of bits, so for the rest of these tests they were done with 8 bits.
+From this test we can see that there is not much difference when I start increasing the number of bits, so for the rest of these tests, they were done with 8 bits.
 
 However interestingly to note that above 128 bits we start seeing a large drop in accuracy, I'm unsure of the reason behind this.
 
 \subsection{Noise tests}
-The following graph show the accuracy results when a normal model and a stochastic model are trained with the MNIST dataset and then fed the testing dataset from the Noisy MNIST dataset.
+The following graph shows the accuracy results when a normal model and a stochastic model are trained with the MNIST dataset and then fed the testing dataset from the Noisy MNIST dataset.
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{results/noise_test.png}
 \caption{Noise test results.}
 \label{fig:noise}
 \end{figure}
-In this test, we can see compared to the normal, the stochastic model loses 0.002\% in accuracy. However when both of these pretrained models are fed the noisy MNIST dataset, the stochastic model fairs considerably better.
+In this test, we can see compared to the normal, the stochastic model loses 0.002\% in accuracy. However when both of these pre-trained models are fed the noisy MNIST dataset, the stochastic model fairs considerably better.
 
-However upon further consideration this seems to be an artifact of the dataset, after some investigation there was a slight mistake in the custom stochastic layer which meant that all the values in the training and testing datsets for the stochastic layer were inverted. 
+However, upon further consideration, this seems to be an artifact of the dataset, after some investigation, there was a slight mistake in the custom stochastic layer which meant that all the values in the training and testing datasets for the stochastic layer were inverted. 
 This should not have affected the results, comparing the images below shows an image that has been passed through the stochastic layer and both the mistake and fixed version shows minor differences other than the inversion.
 \begin{figure}[H]
 \centering
@@ -415,7 +415,7 @@ After the correction, the advantage disappears.
 \label{fig:noise_corrected}
 \end{figure}
 
-This is further shown by inverting the test and training data for the normal model, this now shows that the results have flipped and that this result is a artefact of the dataset rather than the stochastic layer.
+This is further shown by inverting the test and training data for the normal model, this now shows that the results have flipped and that this result is an artefact of the dataset rather than the stochastic layer.
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{results/normal_inverted.png}
@@ -456,27 +456,27 @@ The stochastic model performs similarly to the normal model, nothing much to not
 \subsection{Convolution2D}
 For this test, the model was changed to use a convolution model of the following form
 \begin{enumerate}
-	\item Conv2D(32 neurons, (3x3 kernel), RELU activation)
-	\item MaxPooling2D((2x2 kernel))
-	\item Conv2D(64 neurons, (3x3 kernel), RELU activation)
-	\item MaxPooling2D((2x2 kernel))
-	\item Conv2D(64 neurons, (3x3 kernel), RELU activation)
-	\item Flatten layer
-	\item Dense layer (64 neurons, RELU activation)
-	\item Dense layer (10 neurons)
+    \item Conv2D(32 neurons, (3x3 kernel), RELU activation)
+    \item MaxPooling2D((2x2 kernel))
+    \item Conv2D(64 neurons, (3x3 kernel), RELU activation)
+    \item MaxPooling2D((2x2 kernel))
+    \item Conv2D(64 neurons, (3x3 kernel), RELU activation)
+    \item Flatten layer
+    \item Dense layer (64 neurons, RELU activation)
+    \item Dense layer (10 neurons)
 \end{enumerate}
 With the stochastic model being
 \begin{enumerate}
-	\item StochasticLayer(728 neurons)
-	\item Reshape
-	\item Conv2D(32 neurons, (3x3 kernel), RELU activation)
-	\item MaxPooling2D((2x2 kernel))
-	\item Conv2D(64 neurons, (3x3 kernel), RELU activation)
-	\item MaxPooling2D((2x2 kernel))
-	\item Conv2D(64 neurons, (3x3 kernel), RELU activation)
-	\item Flatten layer
-	\item Dense layer (64 neurons, RELU activation)
-	\item Dense layer (10 neurons)
+    \item StochasticLayer(728 neurons)
+    \item Reshape
+    \item Conv2D(32 neurons, (3x3 kernel), RELU activation)
+    \item MaxPooling2D((2x2 kernel))
+    \item Conv2D(64 neurons, (3x3 kernel), RELU activation)
+    \item MaxPooling2D((2x2 kernel))
+    \item Conv2D(64 neurons, (3x3 kernel), RELU activation)
+    \item Flatten layer
+    \item Dense layer (64 neurons, RELU activation)
+    \item Dense layer (10 neurons)
 \end{enumerate}
 
 \begin{figure}[H]
@@ -496,14 +496,14 @@ The following graph shows the accuracy of the test dataset as the size of the hi
 \label{fig:denselayer}
 \end{figure}
 
-This is by far the most interesting results so far and thus the results above are 30 samples instead of the usual 20 samples. The results show that for hidden dense layer sizes of 32 and below the stochastic layer fairs much better, however I'm still unsure if this is because of the stochastic layer or another artefact of the dataset, I will continue to research.
+This is by far the most interesting results so far and thus the results above are 30 samples instead of the usual 20 samples. The results show that for hidden dense layer sizes of 32 and below the stochastic layer fairs much better, however, I'm still unsure if this is because of the stochastic layer or another artefact of the dataset, I will continue to research.
 
 \chapter{Conclusions and Future Work}
 \label{chap:Conclusions}
 
 \section{Conclusions}
 \label{sec:ConclusionsConclusions}
-In conclusion, it seems that the stochastic layer has minimum impact on the performance of neural networks in all the tests I have done and in some case worse performance. 
+In conclusion, it seems that the stochastic layer has a minimum impact on the performance of neural networks in all the tests I have done and in some case worse performance. 
 
 \section{Future work}
 \label{sec:ConclustionsFuturework}
