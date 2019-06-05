@@ -1,23 +1,23 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Neuron model.\relax }}{2}{figure.caption.9}% 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Sigmoid graph.\relax }}{3}{figure.caption.10}% 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Neural network model.\relax }}{4}{figure.caption.11}% 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Stochastic gradient example. Y-Axis represents accuracy rate\relax }}{5}{figure.caption.12}% 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Global maxima example. Y-Axis represents accuracy rate\relax }}{6}{figure.caption.13}% 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Samples of the MNIST dataset.\relax }}{7}{figure.caption.14}% 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Samples of ambiguous digits.\relax }}{8}{figure.caption.15}% 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Neuron model\cite {fig:neuron_model}.\relax }}{2}{figure.caption.7}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Sigmoid graph\cite {fig:sigmoid}.\relax }}{3}{figure.caption.8}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Neural network model\cite {fig:neural_network_model}.\relax }}{4}{figure.caption.9}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Stochastic gradient example. Y-Axis represents accuracy rate\relax }}{5}{figure.caption.10}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Global maxima example. Y-Axis represents accuracy rate\relax }}{6}{figure.caption.11}% 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Samples of the MNIST dataset\cite {fig:mnist}.\relax }}{7}{figure.caption.12}% 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Samples of ambiguous digits\cite {fig:mnist_incorrect}.\relax }}{8}{figure.caption.13}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Bit size results.\relax }}{10}{figure.caption.16}% 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Noise test results.\relax }}{11}{figure.caption.17}% 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Left is original, right is inverted stochastic layer result.\relax }}{11}{figure.caption.18}% 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Left is original, right is corrected stochastic layer result.\relax }}{12}{figure.caption.19}% 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Corrected noise test results.\relax }}{12}{figure.caption.20}% 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Inverted noise test results.\relax }}{13}{figure.caption.21}% 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Noise shuffle results.\relax }}{13}{figure.caption.22}% 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Bit size results.\relax }}{14}{figure.caption.23}% 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Epoch results.\relax }}{15}{figure.caption.24}% 
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Conv2D results.\relax }}{16}{figure.caption.25}% 
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Dense layer results.\relax }}{16}{figure.caption.26}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Bit size results.\relax }}{10}{figure.caption.14}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Noise test results.\relax }}{11}{figure.caption.15}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Left is original, right is inverted stochastic layer result.\relax }}{11}{figure.caption.16}% 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Left is original, right is corrected stochastic layer result.\relax }}{12}{figure.caption.17}% 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Corrected noise test results.\relax }}{12}{figure.caption.18}% 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Inverted noise test results.\relax }}{13}{figure.caption.19}% 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Noise shuffle results.\relax }}{14}{figure.caption.20}% 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Bit size results.\relax }}{15}{figure.caption.21}% 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Epoch results.\relax }}{16}{figure.caption.22}% 
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Conv2D results.\relax }}{17}{figure.caption.23}% 
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Dense layer results.\relax }}{18}{figure.caption.24}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }

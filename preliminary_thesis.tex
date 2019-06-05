@@ -92,8 +92,13 @@
 % long with no spaces, they mess up line wrapping.  The command \url{http://www.physics.byu.edu}
 % allows LaTeX to break the url across lines at appropriate places: e.g. http://www.
 % physics.byu.edu.  This is helpful if you reference web pages.
-\usepackage{url}
-\urlstyle{rm}
+
+\usepackage[hyphens]{url}
+\urlstyle{same}
+\usepackage{cite}
+
+%\usepackage{url}
+%\urlstyle{rm}
 
 % If you have a lot of equations, you might be interested in the amstex package.
 % It defines a number of environments and macros that are helpful for mathematics.
@@ -138,6 +143,7 @@
 % in the hyperref package documentation
 \usepackage[bookmarksnumbered,pdfpagelabels=true,plainpages=false,colorlinks=true,
             linkcolor=black,citecolor=red,urlcolor=blue]{hyperref}
+\hypersetup{breaklinks=true}
 
 % My custom packages
 \usepackage{float}
@@ -195,7 +201,7 @@
 % The text of your abstract
 \Abstract{
 \vspace{-1.5 cm}
-Neural networks considered a core foundation of machine learning, has recently ballooned into a large framework that requires vast amounts of computing resources and time. Here, we examine how to improve these networks, hoping to achieve networks that can calculate the same result with less training time and/or resources using ideas such as stochastic numbers and probabilistic results.
+Neural networks considered a core foundation of machine learning, has recently ballooned into a large framework that requires vast amounts of computing resources and time. Here, we examine how to improve these networks, hoping to achieve networks that can calculate the same result with less training time and/or resources using, ideas such as stochastic numbers and probabilistic results.
 }
 
 
@@ -235,7 +241,7 @@ Neural networks considered a core foundation of machine learning, has recently b
 
 \clearemptydoublepage
 % Make the list of tables
-\listoftables
+%\listoftables
 
 \clearemptydoublepage
 
@@ -263,7 +269,7 @@ To understand what each layer in a neural network is doing, it is first necessar
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{pictures/neuron_model.png}
-\caption{Neuron model.}
+\caption{Neuron model\cite{fig:neuron_model}.}
 \label{fig:neuron_model}
 \end{figure}
 
@@ -271,7 +277,7 @@ Neurons are fed a set of data through its inputs which are multiplied by a speci
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{pictures/sigmoid.png}
-\caption{Sigmoid graph.}
+\caption{Sigmoid graph\cite{fig:sigmoid}.}
 \label{fig:sigmoid}
 \end{figure}
 
@@ -279,7 +285,7 @@ Next is neural network layers varying based on the task you want to try an accom
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{pictures/neural_network_model.png}
-\caption{Neural network model.}
+\caption{Neural network model\cite{fig:neural_network_model}.}
 \label{fig:neural_network_model}
 \end{figure}
 
@@ -328,7 +334,7 @@ The MNIST dataset\cite{lecun-website} is a commonly used dataset for machine lea
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{pictures/mnist.png}
-\caption{Samples of the MNIST dataset.}
+\caption{Samples of the MNIST dataset\cite{fig:mnist}.}
 \label{fig:mnist}
 \end{figure}
 
@@ -338,7 +344,7 @@ However this dataset is not without its faults, there are quite a number of imag
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{pictures/mnist_incorrect.png}
-\caption{Samples of ambiguous digits.}
+\caption{Samples of ambiguous digits\cite{fig:mnist_incorrect}.}
 \label{fig:incorrect_mnist}
 \end{figure}
 The dataset is also often constructed as too small and too simple, consisting of only 70,000 images of greyscale images. Compared to datasets such as CIFAR10 which has the same amount of images but 32x32 colour images or another dataset like ImageNet consisting of 1,331,167 images, MNIST is certainly behind. However, MNIST has been used and is continued to be used as a way to quickly validate a machine learning algorithm before moving on to larger more complicated datasets that take much more time to compute.
@@ -373,7 +379,7 @@ TODO, talk about results of stochastic numbers compared to the normal model
 The following graph show the accuracy results when the bit size of the stochastic layer was modified.
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{results/bitsize.png}
+\includegraphics[width=16cm]{results/bitsize.png}
 \caption{Bit size results.}
 \label{fig:bitsize}
 \end{figure}
@@ -385,7 +391,7 @@ However interestingly to note that above 128 bits we start seeing a large drop i
 The following graph shows the accuracy results when a normal model and a stochastic model are trained with the MNIST dataset and then fed the testing dataset from the Noisy MNIST dataset.
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{results/noise_test.png}
+\includegraphics[width=16cm]{results/noise_test.png}
 \caption{Noise test results.}
 \label{fig:noise}
 \end{figure}
@@ -395,14 +401,14 @@ However, upon further consideration, this seems to be an artifact of the dataset
 This should not have affected the results, comparing the images below shows an image that has been passed through the stochastic layer and both the mistake and fixed version shows minor differences other than the inversion.
 \begin{figure}[H]
 \centering
-\includegraphics[width=8cm]{results/stochastic_layer_pass_inverted.png}
+\includegraphics[width=6cm]{results/stochastic_layer_pass_inverted.png}
 \caption{Left is original, right is inverted stochastic layer result.}
 \label{fig:noise_stochastic_inverted}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=8cm]{results/stochastic_layer_pass_corrected.png}
+\includegraphics[width=6cm]{results/stochastic_layer_pass_corrected.png}
 \caption{Left is original, right is corrected stochastic layer result.}
 \label{fig:noise_stochastic}
 \end{figure}
@@ -410,7 +416,7 @@ This should not have affected the results, comparing the images below shows an i
 After the correction, the advantage disappears.
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{results/bitsize_corrected.png}
+\includegraphics[width=16cm]{results/bitsize_corrected.png}
 \caption{Corrected noise test results.}
 \label{fig:noise_corrected}
 \end{figure}
@@ -418,36 +424,39 @@ After the correction, the advantage disappears.
 This is further shown by inverting the test and training data for the normal model, this now shows that the results have flipped and that this result is an artefact of the dataset rather than the stochastic layer.
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{results/normal_inverted.png}
+\includegraphics[width=16cm]{results/normal_inverted.png}
 \caption{Inverted noise test results.}
 \label{fig:noise_normal_inverted}
 \end{figure}
 
+\vfill
 \subsection{Noise shuffle}
 The following graph shows the accuracy results when we take both the normal dataset and the noisy dataset and shuffle them together, producing a new dataset that contains normal and noisy MNIST images.
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{results/noise_shuffle.png}
+\includegraphics[width=16cm]{results/noise_shuffle.png}
 \caption{Noise shuffle results.}
 \label{fig:noise_shuffle}
 \end{figure}
 The stochastic model performs similarly to the normal model, nothing much to note here.
 
+\vfill
 \subsection{Reduced dataset}
 The following graph shows the accuracy of both the normal model and stochastic model as the size of the training datset is reduced.
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{results/reduced_dataset.png}
+\includegraphics[width=16cm]{results/reduced_dataset.png}
 \caption{Bit size results.}
 \label{fig:dataset}
 \end{figure}
 The stochastic model has significantly worse performance as the dataset size decreases.
 
+\vfill
 \subsection{Reduced Epochs}
 The following graph shows the accuracy of the test dataset as training epochs are increased.
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{results/epoch.png}
+\includegraphics[width=16cm]{results/epoch.png}
 \caption{Epoch results.}
 \label{fig:epoch}
 \end{figure}
@@ -481,7 +490,7 @@ With the stochastic model being
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=8cm]{results/conv2d.png}
+\includegraphics[width=16cm]{results/conv2d.png}
 \caption{Conv2D results.}
 \label{fig:conv2d}
 \end{figure}
@@ -491,7 +500,7 @@ The stochastic model performs similarly to the normal model, nothing much to not
 The following graph shows the accuracy of the test dataset as the size of the hidden dense layers neurons are increased.
 \begin{figure}[H]
 \centering
-\includegraphics[width=8cm]{results/dense_layer.png}
+\includegraphics[width=16cm]{results/dense_layer.png}
 \caption{Dense layer results.}
 \label{fig:denselayer}
 \end{figure}
@@ -503,11 +512,11 @@ This is by far the most interesting results so far and thus the results above ar
 
 \section{Conclusions}
 \label{sec:ConclusionsConclusions}
-In conclusion, it seems that the stochastic layer has a minimum impact on the performance of neural networks in all the tests I have done and in some case worse performance. 
+In conclusion, it seems that the stochastic layer has a minimum impact on the performance of neural networks in all the tests I have done and in some case worse performance. My speculation as to why the stochastic layer is not enough to cause any drastic improvements is that the stochastic layer is not enough of a change of the standard neural network and seems to be just adding noise which causes a slight performance dip, however regarding the dense layer test there seems to be some ground to be gained if the addition of this noise in small layer size networks perform better than the standard model.
 
 \section{Future work}
 \label{sec:ConclustionsFuturework}
-My next steps for this project is to look into alternative ways of trying to use the stochastic network or another representation that might yield better results.
+My next steps for this project is to look into alternative ways of trying to use the stochastic network, another representation that might yield better results and into the dense layer tests to see how noise is affecting the neural network.
 It is notable that MNIST may not provide the complexity that I'm looking for, especially after the inverted artefact. My next steps for this is to look into more complicated datasets like CIFAR100 to see if I can find performance in that area.
 
 \clearemptydoublepage
