@@ -255,7 +255,12 @@ Neural networks considered a core foundation of machine learning, has recently b
 \section{Neural networks: introduction}
 Neural networks are the core structure of what many believe to be the next step in computing, machine learning. We are starting to see machine learning used to solve problems that originally were only able to be solved by people. However, all this machine learning comes at a cost, machine learning needs vast amounts of data to learn and thus large amounts of computing resources, electricity, time and even the best machine learning models work within a narrow, controlled set of inputs, anything outside this "range" are misclassified, in other words, machine learnings models are sensitive to noise and not general enough.
 
-My thesis details, my efforts to try and find a way to reduce machine learning complexity or finding a way to make machine learning models more tolerant to noise. The preliminary work done in this thesis relates to trying to use stochastic numbers with the Tensorflow machine learning framework on the MNIST dataset to try and find ways to reduce complexity.
+\section{Project goal}
+My thesis project goal is primarily trying to reduce neural network complexity. Complexity that forms due to the vast amount of data that needs to be worked through and the finicky nature of neural networks. Overall we have identified an avenue that I plan to explore more with is alternative neural network models using stochastic numbers with the goal of using these models to have the neural networks train faster, either through being more efficient or being able to generalise from input date more.
+
+\section{Project timeline}
+Considering that this project is primarily a research project, I'll be taking a research project plan response to this. I have summarised the weekly plan of my project in the Gantt chart below.
+%TODO Gantt chart
 
 \chapter{Background and Related Work}
 \label{chap:LitReview}
@@ -304,6 +309,12 @@ Y-Axis represents accuracy rate}
 \label{fig:gradient}
 \end{figure}
 
+\subsection{Overfitting}
+TODO
+
+\subsection{Complexities of neural networks}
+TODO
+
 However in realities, there are much more dimensions to a machine learning model and secondly, there is not just one point that is the highest but multiple hills of varying heights, this is one of the many reasons why machine learning is hard. You can create simple machine learning algorithms that find a maximum point but not the global maximum point or the global maxima, you can also try and adjust how much you step by each amount but the best way, which requires all the computation power is a small stepping amount which tries all points on the "hills". 
 \begin{figure}[H]
 \centering
@@ -312,8 +323,12 @@ However in realities, there are much more dimensions to a machine learning model
 Y-Axis represents accuracy rate}
 \label{fig:global_minima}
 \end{figure}
+\section{Other attempts at reducing neural network complexity}
+%TODO
 
 \section{Stochastic computing}
+%TODO Add references
+
 Stochastic computing is a branch of computing that relies on probabilistic bit streams to calculate numbers, often relying on simple bit-wise operations. Every number in a stochastic computer is arranged as a probability of the ones and zeros in a continuous binary number stream. 
 
 \subsection{Advantages of stochastic numbers}
@@ -324,6 +339,11 @@ However, the reason for stochastic computing not being proliferated is the inher
 
 Secondly is that while stochastic numbers have a simple analog for multiplication, the core of stochastic numbers like the PRNG (Pseudo-random number generator) for generating the random bit stream and decoding the bit stream by sampling do not have simple gate-level analogues and this is where stochastic numbers lose their advantage.
 
+\section{Reasoning behind stochastic numbers}
+%TODO Talk about why sotchastic numbers, ie their noise resistance, speed boosts and brains as an analog computer.
+
+
+%TODO Should this be part of the project plan
 \section{Tensorflow}
 Tensorflow\cite{tensorflow} is a machine learning framework primarily written in Python. It was released by Google under the Apache License 2.0 on November 9th, 2015. The Tensorflow network employs the idea of creating a neural network model which is then compiled before being handed off to the appropriate processing unit be it CPU, GPU or TPU, this is in contrast to other machine learning frameworks like PyTorch that generate their models dynamically on the fly which results in a small performance hit.
 
@@ -542,6 +562,7 @@ NN \> Neural network \\
 %\input{Bibliography/biblio3}
 \bibliographystyle{IEEEtran}
 %\bibliographystyle{acm}
+
 \bibliography{my_reference}
 %\bibliography{Bibliography/biblio4}
 
