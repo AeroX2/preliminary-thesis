@@ -23,37 +23,37 @@
 
 \bibitem{fig:neuron_model}
 \BIBentryALTinterwordspacing
- [Online]. Available:
+Neuron model figure. [Online]. Available:
   \url{https://github.com/trekhleb/machine-learning-octave/blob/master/neural-network/README.md}
 \BIBentrySTDinterwordspacing
 
 \bibitem{fig:sigmoid}
 \BIBentryALTinterwordspacing
- [Online]. Available:
+Sigmoid figure. [Online]. Available:
   \url{https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Logistic-curve.svg/320px-Logistic-curve.svg.png}
 \BIBentrySTDinterwordspacing
 
 \bibitem{fig:neural_network_model}
 \BIBentryALTinterwordspacing
- [Online]. Available:
+Neural network model figure. [Online]. Available:
   \url{https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Colored_neural_network.svg/1200px-Colored_neural_network.svg.png}
 \BIBentrySTDinterwordspacing
 
 \bibitem{fig:mnist}
 \BIBentryALTinterwordspacing
- [Online]. Available:
+Mnist label examples figure. [Online]. Available:
   \url{https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png}
 \BIBentrySTDinterwordspacing
 
 \bibitem{fig:mnist_incorrect}
 \BIBentryALTinterwordspacing
- [Online]. Available:
+Incorrect mnist labels figure. [Online]. Available:
   \url{https://www.researchgate.net/profile/Antonio_Zippo/publication/232906025/figure/fig3/AS:300525175230467@1448662193349/Sample-of-common-incorrect-classifications-on-MNIST-dataset-Numbers-in-the-upper-left-of.png}
 \BIBentrySTDinterwordspacing
 
 \bibitem{neural-network-history}
 \BIBentryALTinterwordspacing
-(2014). [Online]. Available:
+(2014) Neural network history. [Online]. Available:
   \url{https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history1.html}
 \BIBentrySTDinterwordspacing
 
@@ -71,7 +71,7 @@ N.~Donges. (2018) Gradient descent in a nutshell. [Online]. Available:
 
 \bibitem{tensorflow}
 \BIBentryALTinterwordspacing
-(2015). [Online]. Available: \url{https://www.tensorflow.org/}
+(2015) Tensorflow. [Online]. Available: \url{https://www.tensorflow.org/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{lecun-website}

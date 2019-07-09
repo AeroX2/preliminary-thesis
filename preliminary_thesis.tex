@@ -309,12 +309,6 @@ Y-Axis represents accuracy rate}
 \label{fig:gradient}
 \end{figure}
 
-\subsection{Overfitting}
-TODO
-
-\subsection{Complexities of neural networks}
-TODO
-
 However in realities, there are much more dimensions to a machine learning model and secondly, there is not just one point that is the highest but multiple hills of varying heights, this is one of the many reasons why machine learning is hard. You can create simple machine learning algorithms that find a maximum point but not the global maximum point or the global maxima, you can also try and adjust how much you step by each amount but the best way, which requires all the computation power is a small stepping amount which tries all points on the "hills". 
 \begin{figure}[H]
 \centering
@@ -323,13 +317,21 @@ However in realities, there are much more dimensions to a machine learning model
 Y-Axis represents accuracy rate}
 \label{fig:global_minima}
 \end{figure}
-\section{Other attempts at reducing neural network complexity}
+
+\subsection{Complexities of neural networks}
 %TODO
+\subsection{Overfitting}
+%TODO
+
+\section{Other people's attempts at reducing neural network complexity}
+%TODO
+
 
 \section{Stochastic computing}
 %TODO Add references
+%TODO Expand?
 
-Stochastic computing is a branch of computing that relies on probabilistic bit streams to calculate numbers, often relying on simple bit-wise operations. Every number in a stochastic computer is arranged as a probability of the ones and zeros in a continuous binary number stream. 
+Stochastic computing is a branch of computing that relies on probabilistic bit streams to calculate numbers, often relying on simple bit-wise operations. Every number in a stochastic computer is arranged as a probability of the ones and zeros in a continuous binary number stream\cite{stochastic-numbers}.
 
 \subsection{Advantages of stochastic numbers}
 There are 2 major advantages with this technique, one is that the system is extremely resistant to noise, flipping multiple bits in the stream will have very little effect or will only change the number minorly. The other major advantage is that certain operations have a simpler solution, for example in terms of multiplication on a conventional computer this would be an $n^2$ operation, however, on a stochastic computer, this is accomplished with an AND gate at a cost of $n$.
@@ -339,11 +341,13 @@ However, the reason for stochastic computing not being proliferated is the inher
 
 Secondly is that while stochastic numbers have a simple analog for multiplication, the core of stochastic numbers like the PRNG (Pseudo-random number generator) for generating the random bit stream and decoding the bit stream by sampling do not have simple gate-level analogues and this is where stochastic numbers lose their advantage.
 
-\section{Reasoning behind stochastic numbers}
-%TODO Talk about why sotchastic numbers, ie their noise resistance, speed boosts and brains as an analog computer.
+\subsection{Reasoning behind stochastic numbers}
+%TODO Talk about brains as an analog computer?
+Stochastic numbers are a relatively old concept dating back to 1960's but with the introduction with digital binary logic it quickly faded into obscurity. However recently there has been a resurgence of ideas with stochastic computing that take advantage of its properties and use it to create faster better and more noise resistant systems, with a more recent example being a stochastic CNN which consumes less energy than that of a normal floating point CNN\cite{stochastic-cnn}.
 
+The idea to use stochastic numbers to improve neural networks comes primarily from the idea of brains and neurons as analogue representations, it is well known that neurons communicate not in continuous streams of data but spikes of activity. The idea being further extended to coincide with stochastic bit streams with the 1's being a spike of activity, also given the noise resistant properties of stochastic numbers and how neural networks don't require any extreme levels of precision, our hope is to pair stochastic numbers with neural networks to gain benefits through the multiplicative and noise resistant properties.
 
-%TODO Should this be part of the project plan
+%TODO Should this section be here?
 \section{Tensorflow}
 Tensorflow\cite{tensorflow} is a machine learning framework primarily written in Python. It was released by Google under the Apache License 2.0 on November 9th, 2015. The Tensorflow network employs the idea of creating a neural network model which is then compiled before being handed off to the appropriate processing unit be it CPU, GPU or TPU, this is in contrast to other machine learning frameworks like PyTorch that generate their models dynamically on the fly which results in a small performance hit.
 
@@ -369,6 +373,8 @@ However this dataset is not without its faults, there are quite a number of imag
 \end{figure}
 The dataset is also often constructed as too small and too simple, consisting of only 70,000 images of greyscale images. Compared to datasets such as CIFAR10 which has the same amount of images but 32x32 colour images or another dataset like ImageNet consisting of 1,331,167 images, MNIST is certainly behind. However, MNIST has been used and is continued to be used as a way to quickly validate a machine learning algorithm before moving on to larger more complicated datasets that take much more time to compute.
 
+\chapter{Research plan}
+%TODO
 
 \chapter{Preliminary results}
 
@@ -393,7 +399,7 @@ The stochastic model was an extension of the normal model but the first layer wa
     \item Dense layer (Softmax activation)
 \end{enumerate}
 
-TODO, talk about results of stochastic numbers compared to the normal model
+%TODO, talk about results of stochastic numbers compared to the normal model
 
 \subsection{Bit size}
 The following graph show the accuracy results when the bit size of the stochastic layer was modified.

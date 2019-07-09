@@ -1,15 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.5.15)  5 JUN 2019 19:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.16)  9 JUL 2019 09:12
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**preliminary_thesis.tex
-(./preliminary_thesis.tex
+**./preliminary_thesis.tex
+(preliminary_thesis.tex
 LaTeX2e <2018-12-01>
-(./BYUPhys.cls
+(BYUPhys.cls
 Document Class: BYUPhys 
-(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\book.cls"
 Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\bk12.clo"
 File: bk12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -25,40 +23,41 @@ File: bk12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\afterpage.sty"
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@output=\toks14
 \AP@partial=\box27
 \AP@footins=\box28
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.sty"
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+("C:\Users\James Ridey\AppData\Roaming\MiKTeX\2.9\tex/latex/fancyhdr\fancyhdr.s
+ty"
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip43
@@ -79,33 +78,33 @@ less on input line 70.
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 71.
 
-(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+("C:\Users\James Ridey\AppData\Roaming\MiKTeX\2.9\tex/latex/cite\cite.sty"
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+("C:\Users\James Ridey\AppData\Roaming\MiKTeX\2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
 Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen105
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen106
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count89
@@ -146,18 +145,19 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
-Package: subfigure 2002/03/15 v2.1.5 subfigure package
+("C:\Users\James Ridey\AppData\Roaming\MiKTeX\2.9\tex/latex/subfigure\subfigure
+.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip55
 \subfigcapskip=\skip56
 \subfigcaptopadj=\dimen114
@@ -172,25 +172,28 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+
+("C:\Users\James Ridey\AppData\Roaming\MiKTeX\2.9\tex/latex/subfigure\subfigure
+.cfg")
 \subfig@top=\skip59
 \subfig@bottom=\skip60
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsxtra.sty
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsxtra.sty"
 Package: amsxtra 1999/11/15 v1.2c AMS extra commands
 LaTeX Info: Redefining \nobreakspace on input line 54.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/multirow\multirow.sty"
 Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
 \multirow@colwidth=\skip61
 \multirow@cntb=\count105
 \multirow@dima=\skip62
 \bigstrutjot=\dimen116
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+("C:\Users\James Ridey\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\caption.sty
+"
 Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+("C:\Users\James Ridey\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\caption3.st
+y"
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen117
@@ -204,8 +207,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \c@caption@flags=\count106
 \c@ContinuedFloat=\count107
 Package caption Info: subfigure package is loaded.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
 Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \col@sep=\dimen124
 \ar@mcellbox=\box31
@@ -215,24 +217,24 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \backup@length=\skip64
 \ar@cellbox=\box32
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\verbatim.sty"
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks22
 \verbatim@line=\toks23
 \verbatim@in@stream=\read1
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\enumerate.sty"
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks24
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -268,27 +270,27 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+("C:\Program Files\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen126
 \Hy@linkcounter=\count108
 \Hy@pagecounter=\count109
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
 File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count110
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+("C:\Program Files\MiKTeX 2.9\tex/latex/00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4393
@@ -324,12 +326,12 @@ LaTeX Info: Redefining \pageref on input line 6454.
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def"
 File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
 \Fld@listcount=\count116
 \c@bookmark@seq@number=\count117
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -338,7 +340,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 146.
 
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count118
 \float@exts=\toks25
@@ -346,7 +348,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks26
 \@floatcapt=\box34
 )
-(./preliminary_thesis.aux)
+(preliminary_thesis.aux)
 \openout1 = `preliminary_thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 215.
@@ -364,7 +366,8 @@ LaTeX Font Info:    ... okay on input line 215.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 215.
 LaTeX Font Info:    ... okay on input line 215.
 
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+("C:\Users\James Ridey\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pd
+f.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count119
 \scratchdimen=\dimen130
@@ -377,10 +380,10 @@ LaTeX Font Info:    ... okay on input line 215.
 \MPnumerator=\count123
 \makeMPintoPDFobject=\count124
 \everyMPtoPDFconversion=\toks28
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -389,31 +392,27 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
+)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box36
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\color.sty"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
 Package hyperref Info: Link coloring ON on input line 215.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count125
@@ -422,7 +421,7 @@ LaTeX Info: Redefining \ref on input line 215.
 LaTeX Info: Redefining \pageref on input line 215.
 LaTeX Info: Redefining \nameref on input line 215.
 
-(./preliminary_thesis.out) (./preliminary_thesis.out)
+(preliminary_thesis.out) (preliminary_thesis.out)
 \@outlinefile=\write3
 \openout3 = `preliminary_thesis.out'.
 
@@ -431,7 +430,7 @@ Overfull \hbox (9.40733pt too wide) in paragraph at lines 223--223
  [] 
  []
 
-<MQlogo_stacked.pdf, id=132, 219.12566pt x 208.59329pt>
+<MQlogo_stacked.pdf, id=155, 219.12566pt x 208.59329pt>
 File: MQlogo_stacked.pdf Graphic file (type pdf)
 <use MQlogo_stacked.pdf>
 Package pdftex.def Info: MQlogo_stacked.pdf  used on input line 223.
@@ -439,22 +438,22 @@ Package pdftex.def Info: MQlogo_stacked.pdf  used on input line 223.
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./MQlogo_stacked.pdf>]
-[2
+{C:/Users/James Ridey/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./MQl
+ogo_stacked.pdf>] [2
 
 ] [3
 
 ] [4
 
-] (./preliminary_thesis.toc
+] (preliminary_thesis.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 6.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 6.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [5
 
@@ -474,7 +473,7 @@ Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[6] (./preliminary_thesis.lof)
+[6] (preliminary_thesis.lof)
 \tf@lof=\write5
 \openout5 = `preliminary_thesis.lof'.
 
@@ -493,176 +492,182 @@ Chapter 1.
 
 ]
 Chapter 2.
-<pictures/neuron_model.png, id=270, 357.7365pt x 172.36395pt>
+<pictures/neuron_model.png, id=298, 357.7365pt x 172.36395pt>
 File: pictures/neuron_model.png Graphic file (type png)
 <use pictures/neuron_model.png>
-Package pdftex.def Info: pictures/neuron_model.png  used on input line 271.
+Package pdftex.def Info: pictures/neuron_model.png  used on input line 276.
 (pdftex.def)             Requested size: 227.62204pt x 109.6708pt.
-<pictures/sigmoid.png, id=273, 77.088pt x 51.3117pt>
+<pictures/sigmoid.png, id=301, 77.088pt x 51.3117pt>
 File: pictures/sigmoid.png Graphic file (type png)
 <use pictures/sigmoid.png>
-Package pdftex.def Info: pictures/sigmoid.png  used on input line 279.
+Package pdftex.def Info: pictures/sigmoid.png  used on input line 284.
 (pdftex.def)             Requested size: 227.62204pt x 151.52946pt.
 [2
 
  <./pictures/neuron_model.png (PNG copy)>]
-<pictures/neural_network_model.png, id=282, 1204.5pt x 1448.41125pt>
+<pictures/neural_network_model.png, id=310, 1204.5pt x 1448.41125pt>
 File: pictures/neural_network_model.png Graphic file (type png)
 <use pictures/neural_network_model.png>
 Package pdftex.def Info: pictures/neural_network_model.png  used on input line 
-287.
+292.
 (pdftex.def)             Requested size: 227.62204pt x 273.69814pt.
  [3 <./pictures/sigmoid.png>]
-<pictures/gradient.png, id=292, 163.5711pt x 142.6128pt>
+<pictures/gradient.png, id=320, 163.5711pt x 142.6128pt>
 File: pictures/gradient.png Graphic file (type png)
 <use pictures/gradient.png>
-Package pdftex.def Info: pictures/gradient.png  used on input line 301.
+Package pdftex.def Info: pictures/gradient.png  used on input line 306.
 (pdftex.def)             Requested size: 170.71652pt x 148.8491pt.
 
 [4 <./pictures/neural_network_model.png>]
-<pictures/global_minima.png, id=299, 316.7835pt x 188.50426pt>
+<pictures/global_minima.png, id=327, 316.7835pt x 188.50426pt>
 File: pictures/global_minima.png Graphic file (type png)
 <use pictures/global_minima.png>
-Package pdftex.def Info: pictures/global_minima.png  used on input line 310.
+Package pdftex.def Info: pictures/global_minima.png  used on input line 315.
 (pdftex.def)             Requested size: 284.52756pt x 169.30997pt.
  [5 <./pictures/gradient.png>]
 [6 <./pictures/global_minima.png>]
-<pictures/mnist.png, id=316, 596.2275pt x 362.35374pt>
+<pictures/mnist.png, id=344, 596.2275pt x 362.35374pt>
 File: pictures/mnist.png Graphic file (type png)
 <use pictures/mnist.png>
-Package pdftex.def Info: pictures/mnist.png  used on input line 336.
+Package pdftex.def Info: pictures/mnist.png  used on input line 356.
 (pdftex.def)             Requested size: 227.62204pt x 138.33722pt.
-<pictures/mnist_incorrect.png, id=321, 383.4325pt x 369.38pt>
+ [7]
+<pictures/mnist_incorrect.png, id=355, 383.4325pt x 369.38pt>
 File: pictures/mnist_incorrect.png Graphic file (type png)
 <use pictures/mnist_incorrect.png>
-Package pdftex.def Info: pictures/mnist_incorrect.png  used on input line 346.
+Package pdftex.def Info: pictures/mnist_incorrect.png  used on input line 366.
 (pdftex.def)             Requested size: 227.62204pt x 219.285pt.
- [7 <./pictures/mnist.png>] [8 <./pictures/mnist_incorrect.png (PNG copy)>]
+ [8 <./pictures/mnist.png> <./pictures/mnist_incorrect.png (PNG copy)>] [9]
 Chapter 3.
-<results/bitsize.png, id=337, 602.25pt x 372.39125pt>
+<results/bitsize.png, id=368, 602.25pt x 372.39125pt>
 File: results/bitsize.png Graphic file (type png)
 <use results/bitsize.png>
-Package pdftex.def Info: results/bitsize.png  used on input line 382.
+Package pdftex.def Info: results/bitsize.png  used on input line 402.
 (pdftex.def)             Requested size: 455.24408pt x 281.50313pt.
-[9
+[10
 
 ]
-<results/noise_test.png, id=351, 725.71124pt x 448.67625pt>
+<results/noise_test.png, id=382, 725.71124pt x 448.67625pt>
 File: results/noise_test.png Graphic file (type png)
 <use results/noise_test.png>
-Package pdftex.def Info: results/noise_test.png  used on input line 394.
+Package pdftex.def Info: results/noise_test.png  used on input line 414.
 (pdftex.def)             Requested size: 455.24408pt x 281.46259pt.
- [10 <./results/bitsize.png>]
-<results/stochastic_layer_pass_inverted.png, id=357, 462.528pt x 346.896pt>
+ [11 <./results/bitsize.png>]
+<results/stochastic_layer_pass_inverted.png, id=388, 462.528pt x 346.896pt>
 File: results/stochastic_layer_pass_inverted.png Graphic file (type png)
 <use results/stochastic_layer_pass_inverted.png>
 Package pdftex.def Info: results/stochastic_layer_pass_inverted.png  used on in
-put line 404.
+put line 424.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<results/stochastic_layer_pass_corrected.png, id=358, 462.528pt x 346.896pt>
+<results/stochastic_layer_pass_corrected.png, id=389, 462.528pt x 346.896pt>
 File: results/stochastic_layer_pass_corrected.png Graphic file (type png)
 <use results/stochastic_layer_pass_corrected.png>
 Package pdftex.def Info: results/stochastic_layer_pass_corrected.png  used on i
-nput line 411.
+nput line 431.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
- [11 <./results/noise_test.png> <./results/stochastic_layer_pass_inverted.png>]
-<results/bitsize_corrected.png, id=365, 725.71124pt x 448.67625pt>
+ [12 <./results/noise_test.png> <./results/stochastic_layer_pass_inverted.png>]
+<results/bitsize_corrected.png, id=397, 725.71124pt x 448.67625pt>
 File: results/bitsize_corrected.png Graphic file (type png)
 <use results/bitsize_corrected.png>
-Package pdftex.def Info: results/bitsize_corrected.png  used on input line 419.
+Package pdftex.def Info: results/bitsize_corrected.png  used on input line 439.
 
 (pdftex.def)             Requested size: 455.24408pt x 281.46259pt.
-<results/normal_inverted.png, id=366, 725.71124pt x 448.67625pt>
+<results/normal_inverted.png, id=398, 725.71124pt x 448.67625pt>
 File: results/normal_inverted.png Graphic file (type png)
 <use results/normal_inverted.png>
-Package pdftex.def Info: results/normal_inverted.png  used on input line 427.
+Package pdftex.def Info: results/normal_inverted.png  used on input line 447.
 (pdftex.def)             Requested size: 455.24408pt x 281.46259pt.
- [12 <./results/stochastic_layer_pass_corrected.png> <./results/bitsize_correct
+ [13 <./results/stochastic_layer_pass_corrected.png> <./results/bitsize_correct
 ed.png>]
-<results/noise_shuffle.png, id=374, 602.25pt x 372.39125pt>
+<results/noise_shuffle.png, id=405, 602.25pt x 372.39125pt>
 File: results/noise_shuffle.png Graphic file (type png)
 <use results/noise_shuffle.png>
-Package pdftex.def Info: results/noise_shuffle.png  used on input line 437.
+Package pdftex.def Info: results/noise_shuffle.png  used on input line 457.
 (pdftex.def)             Requested size: 455.24408pt x 281.50313pt.
- [13 <./results/normal_inverted.png>]
-<results/reduced_dataset.png, id=380, 804.00375pt x 496.85625pt>
+ [14 <./results/normal_inverted.png>]
+<results/reduced_dataset.png, id=411, 804.00375pt x 496.85625pt>
 File: results/reduced_dataset.png Graphic file (type png)
 <use results/reduced_dataset.png>
-Package pdftex.def Info: results/reduced_dataset.png  used on input line 448.
+Package pdftex.def Info: results/reduced_dataset.png  used on input line 468.
 (pdftex.def)             Requested size: 455.24408pt x 281.33081pt.
 
-[14 <./results/noise_shuffle.png>]
-<results/epoch.png, id=386, 860.21375pt x 531.9875pt>
+[15 <./results/noise_shuffle.png>]
+<results/epoch.png, id=417, 860.21375pt x 531.9875pt>
 File: results/epoch.png Graphic file (type png)
 <use results/epoch.png>
-Package pdftex.def Info: results/epoch.png  used on input line 459.
+Package pdftex.def Info: results/epoch.png  used on input line 479.
 (pdftex.def)             Requested size: 455.24408pt x 281.54616pt.
- [15 <./results/reduced_dataset.png>]
-[16 <./results/epoch.png>]
-<results/conv2d.png, id=403, 1379.1525pt x 852.18375pt>
+ [16 <./results/reduced_dataset.png>]
+[17 <./results/epoch.png>]
+<results/conv2d.png, id=434, 1379.1525pt x 852.18375pt>
 File: results/conv2d.png Graphic file (type png)
 <use results/conv2d.png>
-Package pdftex.def Info: results/conv2d.png  used on input line 493.
+Package pdftex.def Info: results/conv2d.png  used on input line 513.
 (pdftex.def)             Requested size: 455.24408pt x 281.29951pt.
- [17 <./results/conv2d.png>]
-<results/dense_layer.png, id=421, 1144.275pt x 707.64375pt>
+ [18 <./results/conv2d.png>]
+<results/dense_layer.png, id=453, 1144.275pt x 707.64375pt>
 File: results/dense_layer.png Graphic file (type png)
 <use results/dense_layer.png>
-Package pdftex.def Info: results/dense_layer.png  used on input line 503.
+Package pdftex.def Info: results/dense_layer.png  used on input line 523.
 (pdftex.def)             Requested size: 455.24408pt x 281.53pt.
- [18 <./results/dense_layer.png>]
+ [19 <./results/dense_layer.png>]
 Chapter 4.
-[19
+[20
 
 ]
 Chapter 5.
-(./preliminary_thesis.bbl [20
+(preliminary_thesis.bbl [21
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 50--53
-\OT1/cmr/m/n/12 publication / 232906025 / ^^Lgure / ^^Lg3 / AS : 30052517523046
-7 @ 1448662193349 / Sample -[]
+Underfull \hbox (badness 10000) in paragraph at lines 38--41
+\OT1/cmr/m/n/12 org / wikipedia / commons / thumb / 4 / 46 / Colored[]neural[]n
+etwork . svg / 1200px -[]
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 50--53
-\OT1/cmr/m/n/12 of -[] common -[] incorrect -[] classi^^Lcations -[] on -[] MNI
-ST -[] dataset -[] Numbers -[] in -[] the -[] upper -[] left -[]
+\OT1/cmr/m/n/12 researchgate . net / prole / Antonio[]Zippo / publication / 23
+2906025 / gure / g3 / AS :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--53
+\OT1/cmr/m/n/12 300525175230467 @ 1448662193349 / Sample -[] of -[] common -[] 
+incorrect -[] classications -[] on -[]
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 548.
- [21
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 569.
+ [22
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 548.
- (./preliminary_thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 548.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 548.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 569.
+ (preliminary_thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 569.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 569.
 Package rerunfilecheck Info: File `preliminary_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: FB67FCEE9FE0EC0E2EF47B34777624FA;2100.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 548.
+(rerunfilecheck)             Checksum: 343623CD63670C17F4C59DB64C1F8C92;2628.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 569.
  ) 
 Here is how much of TeX's memory you used:
- 7979 strings out of 494518
- 119001 string characters out of 6176313
- 210922 words of memory out of 5000000
- 11405 multiletter control sequences out of 15000+600000
- 11408 words of font info for 42 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 36i,12n,43p,802b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on preliminary_thesis.pdf (28 pages, 824225 bytes).
+ 7990 strings out of 492902
+ 119516 string characters out of 3133530
+ 215172 words of memory out of 3000000
+ 11650 multiletter control sequences out of 15000+200000
+ 11408 words of font info for 42 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,12n,43p,805b,410s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmti12.pfb>
+Output written on preliminary_thesis.pdf (29 pages, 875786 bytes).
 PDF statistics:
- 512 PDF objects out of 1000 (max. 8388607)
- 418 compressed objects within 5 object streams
- 120 named destinations out of 1000 (max. 500000)
- 352 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 543 PDF objects out of 1000 (max. 8388607)
+ 127 named destinations out of 1000 (max. 500000)
+ 400 words of extra memory for PDF output out of 10000 (max. 10000000)
 
