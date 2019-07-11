@@ -266,7 +266,7 @@ Considering that this project is primarily a research project, I'll be taking a 
 \label{chap:LitReview}
 
 \section{Neural networks: explanation}
-Neural networks are a very rough simulation of how the neurons in a human brain actually work, they have been researched since the 1960s\cite{neural-network-history} but at the time we did not have the computing power necessary to run these large neural networks and thus progress was halted until around such time as 1970-1980's when backpropagation was discovered making neural network training much more efficient and parallel computing system was also starting to kick off.
+Neural networks are a very rough simulation of how the neurons in a human brain actually work\cite{neural-network-intro}, they have been researched since the 1960s\cite{neural-network-history} but at the time we did not have the computing power necessary to run these large neural networks and thus progress was halted until around such time as 1970-1980's when backpropagation was discovered making neural network training much more efficient and parallel computing system was also starting to kick off.
 
 The most common form of a neural network in the feedforward model where the inputs are passed to the neural network and it outputs an answer. The feedforward model consists of an input layer, hidden layers and an output layer each of these layers are composed of varying amounts of neurons depending on the complexity of the data that is trying to be learned. More models of neural networks exist which aim to memorise or improve the feedforward model, however, the feedforward model is incredibly ubiquitous and is the main driving force behind machine learning in the industry. 
 
@@ -318,10 +318,24 @@ Y-Axis represents accuracy rate}
 \label{fig:global_minima}
 \end{figure}
 
-\subsection{Complexities of neural networks}
-%TODO
+\section{Complexities of neural networks}
+The main question about this thesis is what makes training neural networks so computationally complex, why neural networks are trained through large GPU farms and the challenges facing researching trying to shrink the size of these neural networks.
+
+%TODO Add citations
 \subsection{Overfitting}
-%TODO
+To start with neural networks are a machine learning tool with the main purpose of being able to generalize from one set of training data and then predict a value based on a new set of input data. 
+
+To train a neural network, we divide the training into 2 phases, the learning/training stage and the prediction state. The learning/training stage is where the weights of the neural network are adjusted using backprogation or a similar algorithm and the neural network is trying to fit the data as well as it can by correctly predicting the correct value for each given input. Then the prediction stage is where the neural network is evaluated against a subset of the data that it has not seen before, this stage is purely to combat overfitting. 
+
+Overfitting is when the neural network begins to fit so well with the training data, that is is unable to generalise/achieve a good accuracy in the prediction stage. In other words it fails as a classification or prediction model because it hasn't really learnt the underlying structure of the data but rather is just "cheating" in the training stage.
+
+Conversely underfitting, occurs when the neural network fails to achieve any accuracy in the training or prediction stage, this is quite rare to see in practice but can occurs with bad datasets or a too simplistic neural network model\cite{underfitting-machine-learning}.
+
+%TODO Add MODEL-COMPELXITY citation
+\subsection{Complexities}
+Given overfitting and underfitting, it becomes a challenge to train neural networks because having a model that is too simplistic will cause underfitting and having a model that is too large not only increases computation time with all the various amounts of weights that each layer incurs but also leads to overfitting\cite{MODEL-COMPLEXITY}. 
+
+Not to mention, the training stage usually requires multiple iterations and the backpropagation algorithm has a high time complexity\cite{backprop-time-complexity}. All in all, this means we end up with large neural network, with thousands to millions of weights and due to how neural networks work, most of the operations needs are matrix multiplications which is what GPU's tend to be good at, considering computer graphics are just matrix manipulations.
 
 \section{Other people's attempts at reducing neural network complexity}
 %TODO
