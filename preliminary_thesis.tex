@@ -256,15 +256,12 @@ Neural networks considered a core foundation of machine learning, has recently b
 Neural networks are the core structure of what many believe to be the next step in computing, machine learning. We are starting to see machine learning used to solve problems that originally were only able to be solved by people. However, all this machine learning comes at a cost, machine learning needs vast amounts of data to learn and thus large amounts of computing resources, electricity, time and even the best machine learning models work within a narrow, controlled set of inputs, anything outside this "range" are misclassified, in other words, machine learnings models are sensitive to noise and not general enough.
 
 \section{Project goal}
-My thesis project goal is primarily trying to reduce neural network complexity. Complexity that forms due to the vast amount of data that needs to be worked through and the finicky nature of neural networks. Overall we have identified an avenue that I plan to explore more with is alternative neural network models using stochastic numbers with the goal of using these models to have the neural networks train faster, either through being more efficient or being able to generalise from input date more.
-
-\section{Project timeline}
-Considering that this project is primarily a research project, I'll be taking a research project plan response to this. I have summarised the weekly plan of my project in the Gantt chart below.
-%TODO Gantt chart
+My thesis project goal is primarily trying to reduce neural network complexity. Complexity that forms due to the vast amount of data that needs to be worked through and the finicky nature of neural networks. Overall we have identified an avenue that I plan to explore in more detail which creating an alternative neural network model using stochastic numbers. With the goal of this model to more efficient in computational time and/or being able to train faster while still maintaining the same levels of accuracy.
 
 \chapter{Background and Related Work}
 \label{chap:LitReview}
 
+%TODO Add references to introduction on neural network
 \section{Neural networks: explanation}
 Neural networks are a very rough simulation of how the neurons in a human brain actually work\cite{neural-network-intro}, they have been researched since the 1960s\cite{neural-network-history} but at the time we did not have the computing power necessary to run these large neural networks and thus progress was halted until around such time as 1970-1980's when backpropagation was discovered making neural network training much more efficient and parallel computing system was also starting to kick off.
 
@@ -331,24 +328,25 @@ Overfitting is when the neural network begins to fit so well with the training d
 
 Conversely underfitting, occurs when the neural network fails to achieve any accuracy in the training or prediction stage, this is quite rare to see in practice but can occurs with bad datasets or a too simplistic neural network model\cite{underfitting-machine-learning}.
 
-%TODO Add MODEL-COMPELXITY citation
 \subsection{Complexities}
-Given overfitting and underfitting, it becomes a challenge to train neural networks because having a model that is too simplistic will cause underfitting and having a model that is too large not only increases computation time with all the various amounts of weights that each layer incurs but also leads to overfitting\cite{MODEL-COMPLEXITY}. 
+Given overfitting and underfitting, it becomes a challenge to train neural networks because having a model that is too simplistic will cause underfitting and having a model that is too large not only increases computation time with all the various amounts of weights that each layer incurs but also leads to overfitting\cite{model-complexity}. 
 
 Not to mention, the training stage usually requires multiple iterations and the backpropagation algorithm has a high time complexity\cite{backprop-time-complexity}. All in all, this means we end up with large neural network, with thousands to millions of weights and due to how neural networks work, most of the operations needs are matrix multiplications which is what GPU's tend to be good at, considering computer graphics are just matrix manipulations.
 
-\section{Other people's attempts at reducing neural network complexity}
+\section{Research into neural network complexity}
 %TODO
+There has been a lot of research in neural networks, while much of it is focused upon learning more and more complex datasets\cite{research-1}\cite{research-2}\cite{research-3}, there has also been a lot of research into trying to prune neural networks and the large amount of parameters (weights) that are needed for these large scale neural networks. A recent example is "Importance Estimation for Neural Network Pruning"\cite{molchanov2019taylor}, where they cite a 40\% reduction in complexity by trimming off 30\% of the parameters.
 
 
+
+\chapter{Research plan}
 \section{Stochastic computing}
-%TODO Add references
-%TODO Expand?
+%TODO Add more references
 
 Stochastic computing is a branch of computing that relies on probabilistic bit streams to calculate numbers, often relying on simple bit-wise operations. Every number in a stochastic computer is arranged as a probability of the ones and zeros in a continuous binary number stream\cite{stochastic-numbers}.
 
 \subsection{Advantages of stochastic numbers}
-There are 2 major advantages with this technique, one is that the system is extremely resistant to noise, flipping multiple bits in the stream will have very little effect or will only change the number minorly. The other major advantage is that certain operations have a simpler solution, for example in terms of multiplication on a conventional computer this would be an $n^2$ operation, however, on a stochastic computer, this is accomplished with an AND gate at a cost of $n$.
+There are 2 major advantages with this technique, one is that the system is extremely resistant to noise, flipping multiple bits in the stream will have very little effect or will only change the number minorly. The other major advantage is that certain operations have a simpler solution, for example in terms of multiplication on a conventional computer this would be an $n^2$ operation, however, on a stochastic computer, this is accomplished with an AND gate at a cost of $n$\cite{stochastic-computing-systems}.
 
 \subsection{Disadvantages of stochastic numbers}
 However, the reason for stochastic computing not being proliferated is the inherent weakness which is the randomness of stochastic numbers. Stochastic numbers can never truly represent the number they are trying to calculate and thus need a large amount of sampling to "zone in" on the number being calculated.
@@ -361,7 +359,6 @@ Stochastic numbers are a relatively old concept dating back to 1960's but with t
 
 The idea to use stochastic numbers to improve neural networks comes primarily from the idea of brains and neurons as analogue representations, it is well known that neurons communicate not in continuous streams of data but spikes of activity. The idea being further extended to coincide with stochastic bit streams with the 1's being a spike of activity, also given the noise resistant properties of stochastic numbers and how neural networks don't require any extreme levels of precision, our hope is to pair stochastic numbers with neural networks to gain benefits through the multiplicative and noise resistant properties.
 
-%TODO Should this section be here?
 \section{Tensorflow}
 Tensorflow\cite{tensorflow} is a machine learning framework primarily written in Python. It was released by Google under the Apache License 2.0 on November 9th, 2015. The Tensorflow network employs the idea of creating a neural network model which is then compiled before being handed off to the appropriate processing unit be it CPU, GPU or TPU, this is in contrast to other machine learning frameworks like PyTorch that generate their models dynamically on the fly which results in a small performance hit.
 
@@ -387,11 +384,14 @@ However this dataset is not without its faults, there are quite a number of imag
 \end{figure}
 The dataset is also often constructed as too small and too simple, consisting of only 70,000 images of greyscale images. Compared to datasets such as CIFAR10 which has the same amount of images but 32x32 colour images or another dataset like ImageNet consisting of 1,331,167 images, MNIST is certainly behind. However, MNIST has been used and is continued to be used as a way to quickly validate a machine learning algorithm before moving on to larger more complicated datasets that take much more time to compute.
 
-\chapter{Research plan}
-%TODO
+\section{Approach}
+%TODO 
+
+\section{Project timeline}
+Considering that this project is primarily a research project, I'll be taking a research project plan response to this. I have summarised the weekly plan of my project in the Gantt chart below.
+%TODO Gantt chart
 
 \chapter{Preliminary results}
-
 \section{Stochastic numbers}
 \subsection{Stochastic numbers: Abstract}
 These preliminary results are based upon the idea of if we could use stochastic numbers as a way of improving neural networks, whether that is through the reduction or datasets, noise tolerance, computation complexity or anything that would give it some edge over a more traditional network.
