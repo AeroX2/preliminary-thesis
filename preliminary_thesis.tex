@@ -256,18 +256,17 @@ Neural networks considered a core foundation of machine learning, has recently b
 Neural networks are the core structure of what many believe to be the next step in computing, machine learning. We are starting to see machine learning used to solve problems that originally were only able to be solved by people. However, all this machine learning comes at a cost, machine learning needs vast amounts of data to learn and thus large amounts of computing resources, electricity, time and even the best machine learning models work within a narrow, controlled set of inputs, anything outside this "range" are misclassified, in other words, machine learnings models are sensitive to noise and not general enough.
 
 \section{Project goal}
-My thesis project goal is primarily trying to reduce neural network complexity. Complexity that forms due to the vast amount of data that needs to be worked through and the finicky nature of neural networks. Overall we have identified an avenue that I plan to explore in more detail which creating an alternative neural network model using stochastic numbers. With the goal of this model to more efficient in computational time and/or being able to train faster while still maintaining the same levels of accuracy.
+My thesis project goal is primarily trying to reduce neural network complexity. Complexity that forms due to the vast amount of data that needs to be worked through and the finicky nature of neural networks. Overall I've identified an avenue that I plan to explore in more detail: creating an alternative neural network model using stochastic numbers. With the goal of this model to be more efficient in computational time and/or being able to train faster while still maintaining the same levels of accuracy.
 
 \chapter{Background and Related Work}
 \label{chap:LitReview}
 
-%TODO Add references to introduction on neural network
 \section{Neural networks: explanation}
-Neural networks are a very rough simulation of how the neurons in a human brain actually work\cite{neural-network-intro}, they have been researched since the 1960s\cite{neural-network-history} but at the time we did not have the computing power necessary to run these large neural networks and thus progress was halted until around such time as 1970-1980's when backpropagation was discovered making neural network training much more efficient and parallel computing system was also starting to kick off.
+Neural networks are a very rough simulation of how the neurons in a human brain actually work\cite{neural-network-intro}, they have been researched since the 1960s\cite{neural-network-history} but at the time we did not have the computing power necessary to run these large neural networks and thus progress was halted until around 1970-1980's when backpropagation was discovered making neural network training much more efficient and parallel computing system was also starting to kick off.
 
-The most common form of a neural network in the feedforward model where the inputs are passed to the neural network and it outputs an answer. The feedforward model consists of an input layer, hidden layers and an output layer each of these layers are composed of varying amounts of neurons depending on the complexity of the data that is trying to be learned. More models of neural networks exist which aim to memorise or improve the feedforward model, however, the feedforward model is incredibly ubiquitous and is the main driving force behind machine learning in the industry. 
+The most common form of a neural network in the feedforward model where the inputs are passed to the neural network and it outputs an answer. The feedforward model consists of an input layer, hidden layers and an output layer. Each of these layers are composed of varying amounts of neurons depending on the complexity of the data that is trying to be learned. More models of neural networks exist which aim to memorise or improve the feedforward model, however, the feedforward model is incredibly ubiquitous and is the main driving force behind machine learning in the industry. 
 
-To understand what each layer in a neural network is doing, it is first necessary to understand what a neuron is doing. A neuron is comprised of inputs, a set of weights, one output and an activation function, as shown below.
+To understand what each layer in a neural network is doing, it is first necessary to understand what a neuron is doing. A neuron is comprised of inputs, a set of weights, one output and an activation function\cite{neural-network-intro-book}, as shown below.
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{pictures/neuron_model.png}
@@ -283,21 +282,21 @@ Neurons are fed a set of data through its inputs which are multiplied by a speci
 \label{fig:sigmoid}
 \end{figure}
 
-Next is neural network layers varying based on the task you want to try an accomplish, some examples include convolutional layers which attempt to use neural networks on squares of pixels, dropout layers which randomly pick weights to drop to try and reduce overfitting and the most common layer used to most machine learning models, is the dense layer, in this layer every neuron connects to every other neuron in the previous layer.
+The next concept is neural network layers which vary based on the task you want to try an accomplish, some examples include convolutional layers which attempt to use neural networks on squares of pixels, dropout layers which randomly pick weights to drop to try and reduce overfitting and the most common layer used to most machine learning models, is the dense layer. In this layer, every neuron connects to every other neuron in the previous layer.
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{pictures/neural_network_model.png}
-\caption{Neural network model\cite{fig:neural_network_model}.}
+\caption{Dense layer neural network model\cite{fig:neural_network_model}.}
 \label{fig:neural_network_model}
 \end{figure}
 
 Each circle in this figure represents a neuron and each line in this figure represents a connection between 2 neurons. By manipulating the weights in the neural network, we change what each neuron calculates and outputs as part of its activation function. In doing so, we now have a framework of which for any given input, the neural network can generate any output (given the right weights), regardless of the complexity of the output\cite{nielsen}. 
 
 \subsection{Training}
-The next question about neural networks is then how are the weights calculated for a given input. This is where training a neural network comes into play. The basic summary for how a neural network is trained is they are fed the input data, the error amount is calculated from the neural network output and then the weights are slowly adjusted to minimize the error rate. How this is all done is where the complexity of neural networks lie and why they take so long to train. One of the simplest algorithms that implements this is the stochastic gradient descent algorithm, which is a core component of many other machine learning algorithms like RMSprop, ADAM and AdaGrad (RMSprop being a commonly used algorithm and the one that was used in the majority of the MNIST tests). 
+The next question about neural networks is then how are the weights calculated for a given input. This is where training a neural network comes into play. The basic summary for how a neural network is trained is they are fed the input data, the error amount is calculated from the difference between the neural network output and the expected output. Then the weights are slowly adjusted to minimize the error rate. How this is all done is where the complexity of neural networks lie and why they take so long to train. One of the simplest algorithms that implements this is the stochastic gradient descent algorithm, which is a core component of many other machine learning algorithms like RMSprop, ADAM and AdaGrad (RMSprop being a commonly used algorithm and the one that was used in the majority of the MNIST tests). 
 
 The gradient descent or GD works by measuring the gradient and trying to find a point at which the error is the lowest. The gradient being a measure of "how much the output of a function changes if you change the inputs a little bit"\cite{towards-data-science}.
-The best way of explaining GD is with a hill climbing example, a blinded person is trying to find the highest point of a hill and so he starts by taking large steps to estimate where the steepest part of the hill is and then smaller and smaller steps until he finds the top of the hill. Applying this to machine learning, the error of the output of the machine learning model is compared with the actual values that are to be expected and this is the error amount, then the weights are changed are relatively "large" amount and the error is measured again and compared to the previous error, this is the gradient. This gradient is then used to estimate how big of a "step"/how much to adjust the weights by on the next iteration.
+The best way of explaining GD is with a hill-climbing example, a blind person is trying to find the highest point of a hill and so he starts by taking large steps to estimate where the steepest part of the hill is and then smaller and smaller steps until he finds the top of the hill. Applying this to machine learning, the error of the output of the machine learning model is compared with the actual values that are to be expected and this is the error amount, then the weights are changed are relatively "large" amount and the error is measured again and compared to the previous error, this is the gradient. This gradient is then used to estimate how big of a "step"/how much to adjust the weights by on the next iteration.
 \begin{figure}[H]
 \centering
 \includegraphics[width=6cm]{pictures/gradient.png}
@@ -318,53 +317,59 @@ Y-Axis represents accuracy rate}
 \section{Complexities of neural networks}
 The main question about this thesis is what makes training neural networks so computationally complex, why neural networks are trained through large GPU farms and the challenges facing researching trying to shrink the size of these neural networks.
 
-%TODO Add citations
-\subsection{Overfitting}
-To start with neural networks are a machine learning tool with the main purpose of being able to generalize from one set of training data and then predict a value based on a new set of input data. 
+\subsection{Overfitting and underfitting}
+Neural networks are a statistics tool with the main purpose of being able to generalize from one set of training data and then predict a value based on a new set of input data. 
 
-To train a neural network, we divide the training into 2 phases, the learning/training stage and the prediction state. The learning/training stage is where the weights of the neural network are adjusted using backprogation or a similar algorithm and the neural network is trying to fit the data as well as it can by correctly predicting the correct value for each given input. Then the prediction stage is where the neural network is evaluated against a subset of the data that it has not seen before, this stage is purely to combat overfitting. 
+To train a neural network, we divide the training into 2 phases, the learning/training stage and the prediction state. The learning/training stage is where the weights of the neural network are adjusted using backpropagation or a similar algorithm and the neural network is trying to fit the data as well as it can by correctly predicting the correct value for each given input. Then the prediction stage is where the neural network is evaluated against a subset of the data that it has not seen before, this stage is purely to combat overfitting. %TODO Citation here?
 
-Overfitting is when the neural network begins to fit so well with the training data, that is is unable to generalise/achieve a good accuracy in the prediction stage. In other words it fails as a classification or prediction model because it hasn't really learnt the underlying structure of the data but rather is just "cheating" in the training stage.
+Overfitting is when the neural network begins to fit so well with the training data, that is unable to generalise/achieve good accuracy in the prediction stage. In other words, it fails as a classification or prediction model because it hasn't really learnt the underlying structure of the data but rather is just "cheating" in the training stage.
 
-Conversely underfitting, occurs when the neural network fails to achieve any accuracy in the training or prediction stage, this is quite rare to see in practice but can occurs with bad datasets or a too simplistic neural network model\cite{underfitting-machine-learning}.
+Conversely, underfitting occurs when the neural network fails to achieve any accuracy in the training or prediction stage, this is quite rare to see in practice but can occur with bad datasets or a too simplistic neural network model\cite{underfitting-machine-learning}.
 
 \subsection{Complexities}
 Given overfitting and underfitting, it becomes a challenge to train neural networks because having a model that is too simplistic will cause underfitting and having a model that is too large not only increases computation time with all the various amounts of weights that each layer incurs but also leads to overfitting\cite{model-complexity}. 
 
-Not to mention, the training stage usually requires multiple iterations and the backpropagation algorithm has a high time complexity\cite{backprop-time-complexity}. All in all, this means we end up with large neural network, with thousands to millions of weights and due to how neural networks work, most of the operations needs are matrix multiplications which is what GPU's tend to be good at, considering computer graphics are just matrix manipulations.
+Not to mention, the training stage usually requires multiple iterations and the backpropagation algorithm has a high time complexity\cite{backprop-time-complexity}. All in all, this means we end up with a large neural network, with thousands to millions of weights and due to how neural networks work, most of the operations needed are matrix multiplications which is what GPU's tend to be good at, considering computer graphics are just matrix manipulations.
 
 \section{Research into neural network complexity}
-%TODO
-There has been a lot of research in neural networks, while much of it is focused upon learning more and more complex datasets\cite{research-1}\cite{research-2}\cite{research-3}, there has also been a lot of research into trying to prune neural networks and the large amount of parameters (weights) that are needed for these large scale neural networks. A recent example is "Importance Estimation for Neural Network Pruning"\cite{molchanov2019taylor}, where they cite a 40\% reduction in complexity by trimming off 30\% of the parameters.
+There has been a lot of research in neural networks, while much of it is focused upon learning more and more complex datasets\cite{research-1}\cite{research-2}\cite{research-3}, there has also been a lot of research into trying to prune neural networks and a large number of parameters (weights) that are needed for these large scale neural networks. A recent example is "Importance Estimation for Neural Network Pruning"\cite{molchanov2019taylor}, where they cite a 40\% reduction in complexity by trimming off 30\% of the parameters.
 
+%TODO Expand?
+In the field, which I'm planning to research there have been a few papers on stochastic numbers and the benefits regarding using them on neural networks, for example, one such paper states a 47\% area and 60\% power reduction while maintaining a high accuracy rate\cite{8119196}. 
 
+%TODO Expand?
+Another paper\cite{7093194} goes on to show how its stochastic neural network allows for building reliable systems due to the high level of noise-immunity that the network model shows.
+
+While both of these papers are impressive research and they show that their networks are comparable with a regular dense layer neural network or MLP (Multi-Layer Perceptron) for short, they fail to address advantages and disadvantages that a stochastic neural network might bring to the table, an example of such an advantage is how a stochastic neural network compares with a regular MLP network when exposed to a noisy dataset. The previous paper regarding noise immunity is mainly focused around random noise injected alongside the input data, not noise inherent within the input data. One of my research avenues is to explore how stochastic neural networks, react to noise during the training and validation stages.
 
 \chapter{Research plan}
 \section{Stochastic computing}
 %TODO Add more references
 
-Stochastic computing is a branch of computing that relies on probabilistic bit streams to calculate numbers, often relying on simple bit-wise operations. Every number in a stochastic computer is arranged as a probability of the ones and zeros in a continuous binary number stream\cite{stochastic-numbers}.
+Stochastic computing is a branch of computing that relies on probabilistic bitstreams to calculate numbers, often relying on simple bit-wise operations. Every number in a stochastic computer is arranged as a probability of the ones and zeros in a continuous binary number stream\cite{stochastic-numbers}.
 
 \subsection{Advantages of stochastic numbers}
-There are 2 major advantages with this technique, one is that the system is extremely resistant to noise, flipping multiple bits in the stream will have very little effect or will only change the number minorly. The other major advantage is that certain operations have a simpler solution, for example in terms of multiplication on a conventional computer this would be an $n^2$ operation, however, on a stochastic computer, this is accomplished with an AND gate at a cost of $n$\cite{stochastic-computing-systems}.
+There are 2 major advantages with this technique, one is that the system is extremely resistant to noise, flipping multiple bits in the stream will have very little effect or will only change the number minorly. The other major advantage is that certain operations have a simpler solution, for example in terms of multiplication on a conventional computer this would be an $n^2$ operation, however, on a stochastic computer, this is accomplished with an AND gate for a cost of $n$\cite{stochastic-computing-systems}.
 
 \subsection{Disadvantages of stochastic numbers}
 However, the reason for stochastic computing not being proliferated is the inherent weakness which is the randomness of stochastic numbers. Stochastic numbers can never truly represent the number they are trying to calculate and thus need a large amount of sampling to "zone in" on the number being calculated.
 
-Secondly is that while stochastic numbers have a simple analog for multiplication, the core of stochastic numbers like the PRNG (Pseudo-random number generator) for generating the random bit stream and decoding the bit stream by sampling do not have simple gate-level analogues and this is where stochastic numbers lose their advantage.
+Secondly is that while stochastic numbers have a simple analog for multiplication, the core of stochastic numbers like the PRNG (Pseudo-random number generator) for generating the random bitstream and decoding the bitstream by sampling do not have simple gate-level analogues and this is where stochastic numbers lose their advantage.
 
 \subsection{Reasoning behind stochastic numbers}
-%TODO Talk about brains as an analog computer?
-Stochastic numbers are a relatively old concept dating back to 1960's but with the introduction with digital binary logic it quickly faded into obscurity. However recently there has been a resurgence of ideas with stochastic computing that take advantage of its properties and use it to create faster better and more noise resistant systems, with a more recent example being a stochastic CNN which consumes less energy than that of a normal floating point CNN\cite{stochastic-cnn}.
+Stochastic numbers are a relatively old concept dating back to the 1960s but with the introduction of digital binary logic, it quickly faded into obscurity. However recently there has been a resurgence of ideas with stochastic computing that take advantage of its properties and use it to create faster better and more noise resistant systems, with a more recent example being a stochastic CNN (Convolution neural network: Used for image classification, made of convolutional layers) which consumes less energy than that of a normal floating-point CNN\cite{stochastic-cnn}.
 
-The idea to use stochastic numbers to improve neural networks comes primarily from the idea of brains and neurons as analogue representations, it is well known that neurons communicate not in continuous streams of data but spikes of activity. The idea being further extended to coincide with stochastic bit streams with the 1's being a spike of activity, also given the noise resistant properties of stochastic numbers and how neural networks don't require any extreme levels of precision, our hope is to pair stochastic numbers with neural networks to gain benefits through the multiplicative and noise resistant properties.
+The idea to use stochastic numbers to improve neural networks comes primarily from the idea of brains and neurons as analogue representations, it is well known that neurons communicate not in continuous streams of data but spikes of activity. The idea is further extended to coincide with stochastic bitstreams with the 1's being a spike of activity, also given the noise-resistant properties of stochastic numbers and how neural networks don't require any extreme levels of precision, our hope is to pair stochastic numbers with neural networks to gain benefits through the multiplicative and noise resistant properties.
 
-\section{Tensorflow}
+\section{Approach}
+My approach to this research is to create custom Tensorflow layers that will fit within existing neural network models, to keep as much of the variability between models as minimal as possible. Each model will be trained with the same MNIST dataset and the main metrics that I will be measuring in each test is the training accuracy as a percentage and the total amount of time before a model reaches 99\% accuracy in the training stage.
+
+\subsection{Tensorflow}
 Tensorflow\cite{tensorflow} is a machine learning framework primarily written in Python. It was released by Google under the Apache License 2.0 on November 9th, 2015. The Tensorflow network employs the idea of creating a neural network model which is then compiled before being handed off to the appropriate processing unit be it CPU, GPU or TPU, this is in contrast to other machine learning frameworks like PyTorch that generate their models dynamically on the fly which results in a small performance hit.
 
 Tensorflow continues to grow in support with new frameworks like Kera that aim to simplify common operations and overall streamline the process and show no signs of stopping with a stable release only 2 months ago.
 
-\section{MNIST dataset}
+\subsection{MNIST dataset}
 The MNIST dataset\cite{lecun-website} is a commonly used dataset for machine learning that consists of 70,000 images of handwritten digits (60,000 training images and 10,000 test images) and the associated labels for each of these images. The dataset is commonly chosen due to its simplicity and many frameworks support it out of the box.
 \begin{figure}[H]
 \centering
@@ -375,7 +380,7 @@ The MNIST dataset\cite{lecun-website} is a commonly used dataset for machine lea
 
 Another common reason that MNIST is chosen is to demonstrate the accuracy of neural networks over more traditional statistical analysis such as linear classifiers and K-nearest neighbours, both of which score around an error rate of 12\% and 5\% respectively\cite{lecun-98} as compared to a simple neural network of 3 layers which can score around 3.05\%\cite{lecun-98}.
 
-However this dataset is not without its faults, there are quite a number of images that are dubiously labelled.
+However this dataset is not without its faults, several images are dubiously labelled.
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{pictures/mnist_incorrect.png}
@@ -384,12 +389,63 @@ However this dataset is not without its faults, there are quite a number of imag
 \end{figure}
 The dataset is also often constructed as too small and too simple, consisting of only 70,000 images of greyscale images. Compared to datasets such as CIFAR10 which has the same amount of images but 32x32 colour images or another dataset like ImageNet consisting of 1,331,167 images, MNIST is certainly behind. However, MNIST has been used and is continued to be used as a way to quickly validate a machine learning algorithm before moving on to larger more complicated datasets that take much more time to compute.
 
-\section{Approach}
-%TODO 
+\subsection{Neural network model}
+The neural network model, I plan to build is one that will take the current floating-point input values, convert those to stochastic numbers, process it in some shape or form and then convert those numbers back to floating-point values, this format should allow me to drop this custom layer anywhere where I wish to test the stochastic process. A good starting point for this is firstly comparing the stochastic model with a regular MLP model and then moving to more complex models like CNN models.
 
-\section{Project timeline}
-Considering that this project is primarily a research project, I'll be taking a research project plan response to this. I have summarised the weekly plan of my project in the Gantt chart below.
-%TODO Gantt chart
+\chapter{Project plan}
+
+\section{Setup}
+For my thesis, most of the tests will be run on my home computer with any long-running tests, run on Amazon cloud servers. Each computer will need to have Tensorflow (with Keras extension), Python 3 and an AMD or NVidia graphics card.
+
+\section{Baselines}
+For this part of the project, I need to gather baselines that I will use to compare the stochastic model, this baseline will need to be run multiple times with different models and variations on the large amounts of parameters. For the baselines, I have identified 3 models which I will compare my stochastic model with
+\begin{itemize}
+    \itemsep0em
+    \item MLP (Multi Layer Perceptron) model
+    \item CNN (Convolutional Neural Network) model
+    \item RNN (Recurrent Neural Network) model
+\end{itemize}
+
+The datasets, I've chosen to train the models with are, 
+\begin{itemize}
+    \itemsep0em
+    \item MNIST
+    \item Fashion MNIST
+    \item CIFAR-10
+\end{itemize}
+These datasets are small enough to be able to get results quickly but complex enough to compare results between models.
+
+Also considering the large variation from test to test, all tests will be repeated 20 times and plotted on a box chart.
+Some other parameters that need to be taken into consideration,
+\begin{itemize}
+    \itemsep0em
+    \item Epochs: 20
+    \item Batch size: 128
+    \item Optimizer: RMSprop
+\end{itemize}
+
+\section{Stochastic model}
+During this stage of the project, I will create my custom stochastic model and run it through the datasets and compare the baselines, if anything interesting pops up I plan to explore that avenue. Otherwise, I will manipulate various settings of both the baseline and the stochastic model to try and find contrasting differences.
+
+Some parameters that I plan to manipulate to find differences are
+\begin{itemize}
+    \itemsep0em
+    \item Dense layer size
+    \item Amount of hidden layers
+    \item Noise in datasets
+    \item Amount of epochs
+    \item Bitsize of the stochastic model
+    \item Smaller datasets
+\end{itemize}
+
+\section{Compilation}
+Nearing the end of my thesis, all of the data will be tabulated on spreadsheets and compiled into various graphs and tables. Most of the data will go onto box charts to show the mean differences and variation between each test.
+
+%Overall I also hope to take ideas from other alternative models like spiking neural networks
+
+%\section{Project timeline}
+%Considering that this project is primarily a research project, I'll be taking a research project plan response to this. I have summarised the weekly plan of my project in the Gantt chart below.
+%%TODO Gantt chart
 
 \chapter{Preliminary results}
 \section{Stochastic numbers}
@@ -399,6 +455,7 @@ The idea mainly comes from spiking neural networks and more theories about how t
 
 All of these results were trained with the MNIST dataset, 20 repetitions using a normal model with the following structure.
 \begin{enumerate}
+    \itemsep0em
     \item Dense input layer
     \item Dropout layer (0.2 probability)
     \item Dense layer (RELU activation)
@@ -407,6 +464,7 @@ All of these results were trained with the MNIST dataset, 20 repetitions using a
 \end{enumerate}
 The stochastic model was an extension of the normal model but the first layer was the custom Stochastic layer.
 \begin{enumerate}
+    \itemsep0em
     \item Custom Stochastic layer
     \item Dense input layer
     \item Dense layer (RELU activation)
@@ -505,6 +563,7 @@ The stochastic model performs similarly to the normal model, nothing much to not
 \subsection{Convolution2D}
 For this test, the model was changed to use a convolution model of the following form
 \begin{enumerate}
+    \itemsep0em
     \item Conv2D(32 neurons, (3x3 kernel), RELU activation)
     \item MaxPooling2D((2x2 kernel))
     \item Conv2D(64 neurons, (3x3 kernel), RELU activation)
@@ -516,6 +575,7 @@ For this test, the model was changed to use a convolution model of the following
 \end{enumerate}
 With the stochastic model being
 \begin{enumerate}
+    \itemsep0em
     \item StochasticLayer(728 neurons)
     \item Reshape
     \item Conv2D(32 neurons, (3x3 kernel), RELU activation)
@@ -557,7 +617,7 @@ In conclusion, it seems that the stochastic layer has a minimum impact on the pe
 \section{Future work}
 \label{sec:ConclustionsFuturework}
 My next steps for this project is to look into alternative ways of trying to use the stochastic network, another representation that might yield better results and into the dense layer tests to see how noise is affecting the neural network.
-It is notable that MNIST may not provide the complexity that I'm looking for, especially after the inverted artefact. My next steps for this is to look into more complicated datasets like CIFAR100 to see if I can find performance in that area.
+Notably, MNIST may not provide the complexity that I'm looking for, especially after the inverted artefact. My next steps for this is to look into more complicated datasets like CIFAR100 to see if I can find performance in that area.
 
 \clearemptydoublepage
 \chapter{Abbreviations}

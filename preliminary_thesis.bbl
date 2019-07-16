@@ -51,11 +51,21 @@ Incorrect mnist labels figure. [Online]. Available:
   \url{https://www.researchgate.net/profile/Antonio_Zippo/publication/232906025/figure/fig3/AS:300525175230467@1448662193349/Sample-of-common-incorrect-classifications-on-MNIST-dataset-Numbers-in-the-upper-left-of.png}
 \BIBentrySTDinterwordspacing
 
+\bibitem{neural-network-intro}
+\BIBentryALTinterwordspacing
+M.~Buckland. Using neural nets to recognize handwritten digits. [Online].
+  Available: \url{http://www.ai-junkie.com/ann/evolved/nnt1.html}
+\BIBentrySTDinterwordspacing
+
 \bibitem{neural-network-history}
 \BIBentryALTinterwordspacing
 (2014) Neural network history. [Online]. Available:
   \url{https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history1.html}
 \BIBentrySTDinterwordspacing
+
+\bibitem{neural-network-intro-book}
+K.~Gurney, \emph{An Introduction to Neural Networks}.\hskip 1em plus 0.5em
+  minus 0.4em\relax Bristol, PA, USA: Taylor \& Francis, Inc., 1997.
 
 \bibitem{nielsen}
 \BIBentryALTinterwordspacing
@@ -68,6 +78,78 @@ M.~A. Nielsen. (2018) Neural networks and deep learning. [Online]. Available:
 N.~Donges. (2018) Gradient descent in a nutshell. [Online]. Available:
   \url{https://towardsdatascience.com/gradient-descent-in-a-nutshell-eaf8c18212f0}
 \BIBentrySTDinterwordspacing
+
+\bibitem{underfitting-machine-learning}
+\BIBentryALTinterwordspacing
+Overfitting in machine learning: What it is and how to prevent it. [Online].
+  Available:
+  \url{https://elitedatascience.com/overfitting-in-machine-learning#overfitting-vs-underfitting}
+\BIBentrySTDinterwordspacing
+
+\bibitem{model-complexity}
+\BIBentryALTinterwordspacing
+J.~Heaton. The number of hidden layers. [Online]. Available:
+  \url{https://www.heatonresearch.com/2017/06/01/hidden-layers.html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{backprop-time-complexity}
+\BIBentryALTinterwordspacing
+K.~Fredenslund. Computational complexity of neural networks. [Online].
+  Available:
+  \url{https://kasperfred.com/series/introduction-to-neural-networks/computational-complexity-of-neural-networks}
+\BIBentrySTDinterwordspacing
+
+\bibitem{research-1}
+R.~M. Sadek, S.~A. Mohammed, A.~R.~K. Abunbehan, A.~K. H.~A. Ghattas, M.~R.
+  Badawi, M.~N. Mortaja, B.~S. Abu{-}Nasser, and S.~S. Abu{-}Naser, ``Parkinson
+  disease prediction using artificial neural network,'' \emph{International
+  Journal of Academic Health and Medical Research (IJAHMR)}, vol.~3, no.~1, pp.
+  1--8, 2019.
+
+\bibitem{research-2}
+R.~Ferdu{\l}a, T.~Walczak, and S.~Cofta, ``The application of artificial neural
+  network in diagnosis of sleep apnea syndrome,'' in \emph{Advances in
+  Manufacturing II}, J.~Trojanowska, O.~Ciszak, J.~M. Machado, and I.~Pavlenko,
+  Eds.\hskip 1em plus 0.5em minus 0.4em\relax Cham: Springer International
+  Publishing, 2019, pp. 432--443.
+
+\bibitem{research-3}
+\BIBentryALTinterwordspacing
+K.~Feng, X.~Pi, H.~Liu, and K.~Sun, ``Myocardial infarction classification
+  based on convolutional neural network and recurrent neural network,''
+  \emph{Applied Sciences}, vol.~9, no.~9, 2019. [Online]. Available:
+  \url{https://www.mdpi.com/2076-3417/9/9/1879}
+\BIBentrySTDinterwordspacing
+
+\bibitem{molchanov2019taylor}
+P.~Molchanov, A.~Mallya, S.~Tyree, I.~Frosio, and J.~Kautz, ``Importance
+  estimation for neural network pruning,'' in \emph{Proceedings of the IEEE
+  Conference on Computer Vision and Pattern Recognition}, 2019.
+
+\bibitem{8119196}
+B.~{Li}, Y.~{Qin}, B.~{Yuan}, and D.~J. {Lilja}, ``Neural network classifiers
+  using stochastic computing with a hardware-oriented approximate activation
+  function,'' in \emph{2017 IEEE International Conference on Computer Design
+  (ICCD)}, Nov 2017, pp. 97--104.
+
+\bibitem{7093194}
+V.~{Canals}, A.~{Morro}, A.~{Oliver}, M.~L. {Alomar}, and J.~L. {Rosselló},
+  ``A new stochastic computing methodology for efficient neural network
+  implementation,'' \emph{IEEE Transactions on Neural Networks and Learning
+  Systems}, vol.~27, no.~3, pp. 551--564, March 2016.
+
+\bibitem{stochastic-numbers}
+A.~{Alaghi}, W.~{Qian}, and J.~P. {Hayes}, ``The promise and challenge of
+  stochastic computing,'' \emph{IEEE Transactions on Computer-Aided Design of
+  Integrated Circuits and Systems}, vol.~37, no.~8, pp. 1515--1531, Aug 2018.
+
+\bibitem{stochastic-computing-systems}
+B.~R. Gaines, ``Chapter 2 stochastic computing systems.''
+
+\bibitem{stochastic-cnn}
+J.~{Yu}, K.~{Kim}, J.~{Lee}, and K.~{Choi}, ``Accurate and efficient stochastic
+  computing hardware for convolutional neural networks,'' in \emph{2017 IEEE
+  International Conference on Computer Design (ICCD)}, Nov 2017, pp. 105--112.
 
 \bibitem{tensorflow}
 \BIBentryALTinterwordspacing
