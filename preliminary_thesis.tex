@@ -66,13 +66,20 @@
 % The settings below produce a nice, well separated header.
 \usepackage{fancyhdr}
   \fancyhead{}
-  \fancyhead[LO]{\slshape \rightmark}
+  \fancyhead[LO]{\slshape \nouppercase{\rightmark}}
   \fancyhead[RO,LE]{\textbf{\thepage}}
-  \fancyhead[RE]{\slshape \leftmark}
   \fancyfoot{}
   \pagestyle{fancy}
   \renewcommand{\chaptermark}[1]{\markboth{\chaptername \ \thechapter. #1}{}}
   \renewcommand{\sectionmark}[1]{\markright{\thesection \ #1}}
+
+
+\fancypagestyle{plain}{%
+  \fancyhead{}
+  \fancyhead[RO,LE]{\textbf{\thepage}}
+  \fancyfoot{}
+}
+
 
 
 % The cite package cleans up the way citations are handled.  For example, it
@@ -320,7 +327,7 @@ The main question about this thesis is what makes training neural networks so co
 \subsection{Overfitting and underfitting}
 Neural networks are a statistics tool with the main purpose of being able to generalize from one set of training data and then predict a value based on a new set of input data. 
 
-To train a neural network, we divide the training into 2 phases, the learning/training stage and the prediction state. The learning/training stage is where the weights of the neural network are adjusted using backpropagation or a similar algorithm and the neural network is trying to fit the data as well as it can by correctly predicting the correct value for each given input. Then the prediction stage is where the neural network is evaluated against a subset of the data that it has not seen before, this stage is purely to combat overfitting. %TODO Citation here?
+To train a neural network, we divide the training into 2 phases, the learning/training stage and the prediction state. The learning/training stage is where the weights of the neural network are adjusted using backpropagation or a similar algorithm and the neural network is trying to fit the data as well as it can by correctly predicting the correct value for each given input. Then the prediction stage is where the neural network is evaluated against a subset of the data that it has not seen before, this stage is purely to combat overfitting\cite{overfitting}.
 
 Overfitting is when the neural network begins to fit so well with the training data, that is unable to generalise/achieve good accuracy in the prediction stage. In other words, it fails as a classification or prediction model because it hasn't really learnt the underlying structure of the data but rather is just "cheating" in the training stage.
 
@@ -334,17 +341,14 @@ Not to mention, the training stage usually requires multiple iterations and the 
 \section{Research into neural network complexity}
 There has been a lot of research in neural networks, while much of it is focused upon learning more and more complex datasets\cite{research-1}\cite{research-2}\cite{research-3}, there has also been a lot of research into trying to prune neural networks and a large number of parameters (weights) that are needed for these large scale neural networks. A recent example is "Importance Estimation for Neural Network Pruning"\cite{molchanov2019taylor}, where they cite a 40\% reduction in complexity by trimming off 30\% of the parameters.
 
-%TODO Expand?
 In the field, which I'm planning to research there have been a few papers on stochastic numbers and the benefits regarding using them on neural networks, for example, one such paper states a 47\% area and 60\% power reduction while maintaining a high accuracy rate\cite{8119196}. 
 
-%TODO Expand?
 Another paper\cite{7093194} goes on to show how its stochastic neural network allows for building reliable systems due to the high level of noise-immunity that the network model shows.
 
 While both of these papers are impressive research and they show that their networks are comparable with a regular dense layer neural network or MLP (Multi-Layer Perceptron) for short, they fail to address advantages and disadvantages that a stochastic neural network might bring to the table, an example of such an advantage is how a stochastic neural network compares with a regular MLP network when exposed to a noisy dataset. The previous paper regarding noise immunity is mainly focused around random noise injected alongside the input data, not noise inherent within the input data. One of my research avenues is to explore how stochastic neural networks, react to noise during the training and validation stages.
 
 \chapter{Research plan}
 \section{Stochastic computing}
-%TODO Add more references
 
 Stochastic computing is a branch of computing that relies on probabilistic bitstreams to calculate numbers, often relying on simple bit-wise operations. Every number in a stochastic computer is arranged as a probability of the ones and zeros in a continuous binary number stream\cite{stochastic-numbers}.
 
@@ -441,12 +445,6 @@ Some parameters that I plan to manipulate to find differences are
 \section{Compilation}
 Nearing the end of my thesis, all of the data will be tabulated on spreadsheets and compiled into various graphs and tables. Most of the data will go onto box charts to show the mean differences and variation between each test.
 
-%Overall I also hope to take ideas from other alternative models like spiking neural networks
-
-%\section{Project timeline}
-%Considering that this project is primarily a research project, I'll be taking a research project plan response to this. I have summarised the weekly plan of my project in the Gantt chart below.
-%%TODO Gantt chart
-
 \chapter{Preliminary results}
 \section{Stochastic numbers}
 \subsection{Stochastic numbers: Abstract}
@@ -470,8 +468,6 @@ The stochastic model was an extension of the normal model but the first layer wa
     \item Dense layer (RELU activation)
     \item Dense layer (Softmax activation)
 \end{enumerate}
-
-%TODO, talk about results of stochastic numbers compared to the normal model
 
 \subsection{Bit size}
 The following graph show the accuracy results when the bit size of the stochastic layer was modified.
@@ -629,6 +625,12 @@ AWGN \qquad \qquad \= Additive White Gaussian Noise\\
 SGD \> Stochastic Gradient Descent\\
 SC \> Stochastic numbers\\
 NN \> Neural network \\
+MLP \> Multi Layer Perceptron \\
+CNN \> Convolutional neural network \\
+RNN \> Recurrent neural network \\
+RELU \> Rectified linear unit \\
+MNIST \> Modified National Institute of Standards and Technology \\
+CIFAR \> Canadian Institute For Advanced Research \\
 \end{tabbing}
 
 %\phantomsection \addcontentsline{toc}{chapter}{Index}
@@ -640,7 +642,7 @@ NN \> Neural network \\
 \url{https://github.com/AeroX2/stochastic-demo}
 
 %\input{Bibliography/biblio3}
-\bibliographystyle{IEEEtran}
+\bibliographystyle{IEEEtranS}
 %\bibliographystyle{acm}
 
 \bibliography{my_reference}

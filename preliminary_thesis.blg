@@ -1,13 +1,14 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: preliminary_thesis.aux
-The style file: IEEEtran.bst
+The style file: IEEEtranS.bst
 Database file #1: my_reference.bib
-"{" immediately follows a field name---line 93 of file my_reference.bib
+"{" immediately follows a field name---line 96 of file my_reference.bib
  : year
  :     {2018}
 I'm skipping whatever remains of this entry
--- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- IEEEtranS.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+** Sorting version - not for normal IEEE work.
 
 Done.
 (There was 1 error message)

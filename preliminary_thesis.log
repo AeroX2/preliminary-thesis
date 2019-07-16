@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.16)  16 JUL 2019 20:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.16)  16 JUL 2019 22:32
 entering extended mode
 **./preliminary_thesis.tex
 (preliminary_thesis.tex
@@ -73,10 +73,6 @@ s
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 70.
-
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 71.
 
 ("C:\Users\James Ridey\AppData\Roaming\MiKTeX\2.9\tex/latex/cite\cite.sty"
 LaTeX Info: Redefining \cite on input line 302.
@@ -338,7 +334,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip65
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 146.
+Package hyperref Info: Option `breaklinks' set `true' on input line 153.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
@@ -351,20 +347,20 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (preliminary_thesis.aux)
 \openout1 = `preliminary_thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 215.
-LaTeX Font Info:    ... okay on input line 215.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 222.
+LaTeX Font Info:    ... okay on input line 222.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 222.
+LaTeX Font Info:    ... okay on input line 222.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 222.
+LaTeX Font Info:    ... okay on input line 222.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 222.
+LaTeX Font Info:    ... okay on input line 222.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 222.
+LaTeX Font Info:    ... okay on input line 222.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 222.
+LaTeX Font Info:    ... okay on input line 222.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 222.
+LaTeX Font Info:    ... okay on input line 222.
 
 ("C:\Users\James Ridey\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pd
 f.mkii"
@@ -407,7 +403,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 215.
+Package hyperref Info: Link coloring ON on input line 222.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -417,23 +413,23 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count125
 )
-LaTeX Info: Redefining \ref on input line 215.
-LaTeX Info: Redefining \pageref on input line 215.
-LaTeX Info: Redefining \nameref on input line 215.
+LaTeX Info: Redefining \ref on input line 222.
+LaTeX Info: Redefining \pageref on input line 222.
+LaTeX Info: Redefining \nameref on input line 222.
 
 (preliminary_thesis.out) (preliminary_thesis.out)
 \@outlinefile=\write3
 \openout3 = `preliminary_thesis.out'.
 
 
-Overfull \hbox (9.40733pt too wide) in paragraph at lines 223--223
+Overfull \hbox (9.40733pt too wide) in paragraph at lines 230--230
  [] 
  []
 
-<MQlogo_stacked.pdf, id=183, 219.12566pt x 208.59329pt>
+<MQlogo_stacked.pdf, id=187, 219.12566pt x 208.59329pt>
 File: MQlogo_stacked.pdf Graphic file (type pdf)
 <use MQlogo_stacked.pdf>
-Package pdftex.def Info: MQlogo_stacked.pdf  used on input line 223.
+Package pdftex.def Info: MQlogo_stacked.pdf  used on input line 230.
 (pdftex.def)             Requested size: 113.87912pt x 108.405pt.
 [1
 
@@ -455,7 +451,18 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 6.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [5
+)
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 29.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
+Make it at least 14.49998pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[5
 
 
 
@@ -466,23 +473,25 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write4
 \openout4 = `preliminary_thesis.toc'.
 
-
-
-Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
-Make it at least 14.49998pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
-
-[6] (preliminary_thesis.lof)
+ [6] (preliminary_thesis.lof)
 \tf@lof=\write5
 \openout5 = `preliminary_thesis.lof'.
 
- [7
+
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 249.
+
+[7
 
 
 
 ]
 Chapter 1.
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 268.
+
 [1
 
 
@@ -492,194 +501,218 @@ Chapter 1.
 
 ]
 Chapter 2.
-<pictures/neuron_model.png, id=335, 357.7365pt x 172.36395pt>
+<pictures/neuron_model.png, id=340, 357.7365pt x 172.36395pt>
 File: pictures/neuron_model.png Graphic file (type png)
 <use pictures/neuron_model.png>
-Package pdftex.def Info: pictures/neuron_model.png  used on input line 272.
+Package pdftex.def Info: pictures/neuron_model.png  used on input line 279.
 (pdftex.def)             Requested size: 227.62204pt x 109.6708pt.
-<pictures/sigmoid.png, id=338, 77.088pt x 51.3117pt>
+<pictures/sigmoid.png, id=343, 77.088pt x 51.3117pt>
 File: pictures/sigmoid.png Graphic file (type png)
 <use pictures/sigmoid.png>
-Package pdftex.def Info: pictures/sigmoid.png  used on input line 280.
+Package pdftex.def Info: pictures/sigmoid.png  used on input line 287.
 (pdftex.def)             Requested size: 227.62204pt x 151.52946pt.
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 290.
+
 [2
 
  <./pictures/neuron_model.png (PNG copy)>]
-<pictures/neural_network_model.png, id=349, 1204.5pt x 1448.41125pt>
+<pictures/neural_network_model.png, id=354, 1204.5pt x 1448.41125pt>
 File: pictures/neural_network_model.png Graphic file (type png)
 <use pictures/neural_network_model.png>
 Package pdftex.def Info: pictures/neural_network_model.png  used on input line 
-288.
+295.
 (pdftex.def)             Requested size: 227.62204pt x 273.69814pt.
  [3 <./pictures/sigmoid.png>]
-<pictures/gradient.png, id=359, 163.5711pt x 142.6128pt>
+<pictures/gradient.png, id=364, 163.5711pt x 142.6128pt>
 File: pictures/gradient.png Graphic file (type png)
 <use pictures/gradient.png>
-Package pdftex.def Info: pictures/gradient.png  used on input line 302.
+Package pdftex.def Info: pictures/gradient.png  used on input line 309.
 (pdftex.def)             Requested size: 170.71652pt x 148.8491pt.
 
 [4 <./pictures/neural_network_model.png>]
-<pictures/global_minima.png, id=366, 316.7835pt x 188.50426pt>
+<pictures/global_minima.png, id=371, 316.7835pt x 188.50426pt>
 File: pictures/global_minima.png Graphic file (type png)
 <use pictures/global_minima.png>
-Package pdftex.def Info: pictures/global_minima.png  used on input line 311.
+Package pdftex.def Info: pictures/global_minima.png  used on input line 318.
 (pdftex.def)             Requested size: 284.52756pt x 169.30997pt.
  [5 <./pictures/gradient.png>]
 [6 <./pictures/global_minima.png>] [7]
 Chapter 3.
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 365.
+
 [8
 
 ]
-<pictures/mnist.png, id=414, 596.2275pt x 362.35374pt>
+<pictures/mnist.png, id=421, 596.2275pt x 362.35374pt>
 File: pictures/mnist.png Graphic file (type png)
 <use pictures/mnist.png>
-Package pdftex.def Info: pictures/mnist.png  used on input line 376.
+Package pdftex.def Info: pictures/mnist.png  used on input line 380.
 (pdftex.def)             Requested size: 227.62204pt x 138.33722pt.
  [9]
-<pictures/mnist_incorrect.png, id=426, 383.4325pt x 369.38pt>
+<pictures/mnist_incorrect.png, id=433, 383.4325pt x 369.38pt>
 File: pictures/mnist_incorrect.png Graphic file (type png)
 <use pictures/mnist_incorrect.png>
-Package pdftex.def Info: pictures/mnist_incorrect.png  used on input line 386.
+Package pdftex.def Info: pictures/mnist_incorrect.png  used on input line 390.
 (pdftex.def)             Requested size: 227.62204pt x 219.285pt.
  [10 <./pictures/mnist.png> <./pictures/mnist_incorrect.png (PNG copy)>] [11]
 Chapter 4.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 404.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 408.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 404.
- [12
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 408.
+
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 429.
+
+[12
 
 ] [13]
 Chapter 5.
-<results/bitsize.png, id=450, 602.25pt x 372.39125pt>
+<results/bitsize.png, id=456, 602.25pt x 372.39125pt>
 File: results/bitsize.png Graphic file (type png)
 <use results/bitsize.png>
-Package pdftex.def Info: results/bitsize.png  used on input line 480.
+Package pdftex.def Info: results/bitsize.png  used on input line 476.
 (pdftex.def)             Requested size: 455.24408pt x 281.50313pt.
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 479.
+
 [14
 
 ]
-<results/noise_test.png, id=464, 725.71124pt x 448.67625pt>
+<results/noise_test.png, id=470, 725.71124pt x 448.67625pt>
 File: results/noise_test.png Graphic file (type png)
 <use results/noise_test.png>
-Package pdftex.def Info: results/noise_test.png  used on input line 492.
+Package pdftex.def Info: results/noise_test.png  used on input line 488.
 (pdftex.def)             Requested size: 455.24408pt x 281.46259pt.
  [15 <./results/bitsize.png>]
-<results/stochastic_layer_pass_inverted.png, id=470, 462.528pt x 346.896pt>
+<results/stochastic_layer_pass_inverted.png, id=476, 462.528pt x 346.896pt>
 File: results/stochastic_layer_pass_inverted.png Graphic file (type png)
 <use results/stochastic_layer_pass_inverted.png>
 Package pdftex.def Info: results/stochastic_layer_pass_inverted.png  used on in
-put line 502.
+put line 498.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<results/stochastic_layer_pass_corrected.png, id=471, 462.528pt x 346.896pt>
+<results/stochastic_layer_pass_corrected.png, id=477, 462.528pt x 346.896pt>
 File: results/stochastic_layer_pass_corrected.png Graphic file (type png)
 <use results/stochastic_layer_pass_corrected.png>
 Package pdftex.def Info: results/stochastic_layer_pass_corrected.png  used on i
-nput line 509.
+nput line 505.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
  [16 <./results/noise_test.png> <./results/stochastic_layer_pass_inverted.png>]
-<results/bitsize_corrected.png, id=478, 725.71124pt x 448.67625pt>
+<results/bitsize_corrected.png, id=484, 725.71124pt x 448.67625pt>
 File: results/bitsize_corrected.png Graphic file (type png)
 <use results/bitsize_corrected.png>
-Package pdftex.def Info: results/bitsize_corrected.png  used on input line 517.
+Package pdftex.def Info: results/bitsize_corrected.png  used on input line 513.
 
 (pdftex.def)             Requested size: 455.24408pt x 281.46259pt.
-<results/normal_inverted.png, id=479, 725.71124pt x 448.67625pt>
+<results/normal_inverted.png, id=485, 725.71124pt x 448.67625pt>
 File: results/normal_inverted.png Graphic file (type png)
 <use results/normal_inverted.png>
-Package pdftex.def Info: results/normal_inverted.png  used on input line 525.
+Package pdftex.def Info: results/normal_inverted.png  used on input line 521.
 (pdftex.def)             Requested size: 455.24408pt x 281.46259pt.
  [17 <./results/stochastic_layer_pass_corrected.png> <./results/bitsize_correct
 ed.png>]
-<results/noise_shuffle.png, id=486, 602.25pt x 372.39125pt>
+<results/noise_shuffle.png, id=492, 602.25pt x 372.39125pt>
 File: results/noise_shuffle.png Graphic file (type png)
 <use results/noise_shuffle.png>
-Package pdftex.def Info: results/noise_shuffle.png  used on input line 535.
+Package pdftex.def Info: results/noise_shuffle.png  used on input line 531.
 (pdftex.def)             Requested size: 455.24408pt x 281.50313pt.
  [18 <./results/normal_inverted.png>]
-<results/reduced_dataset.png, id=493, 804.00375pt x 496.85625pt>
+<results/reduced_dataset.png, id=499, 804.00375pt x 496.85625pt>
 File: results/reduced_dataset.png Graphic file (type png)
 <use results/reduced_dataset.png>
-Package pdftex.def Info: results/reduced_dataset.png  used on input line 546.
+Package pdftex.def Info: results/reduced_dataset.png  used on input line 542.
 (pdftex.def)             Requested size: 455.24408pt x 281.33081pt.
 
 [19 <./results/noise_shuffle.png>]
-<results/epoch.png, id=499, 860.21375pt x 531.9875pt>
+<results/epoch.png, id=505, 860.21375pt x 531.9875pt>
 File: results/epoch.png Graphic file (type png)
 <use results/epoch.png>
-Package pdftex.def Info: results/epoch.png  used on input line 557.
+Package pdftex.def Info: results/epoch.png  used on input line 553.
 (pdftex.def)             Requested size: 455.24408pt x 281.54616pt.
  [20 <./results/reduced_dataset.png>]
 [21 <./results/epoch.png>]
-<results/conv2d.png, id=518, 1379.1525pt x 852.18375pt>
+<results/conv2d.png, id=524, 1379.1525pt x 852.18375pt>
 File: results/conv2d.png Graphic file (type png)
 <use results/conv2d.png>
-Package pdftex.def Info: results/conv2d.png  used on input line 593.
+Package pdftex.def Info: results/conv2d.png  used on input line 589.
 (pdftex.def)             Requested size: 455.24408pt x 281.29951pt.
-<results/dense_layer.png, id=519, 1144.275pt x 707.64375pt>
+<results/dense_layer.png, id=525, 1144.275pt x 707.64375pt>
 File: results/dense_layer.png Graphic file (type png)
 <use results/dense_layer.png>
-Package pdftex.def Info: results/dense_layer.png  used on input line 603.
+Package pdftex.def Info: results/dense_layer.png  used on input line 599.
 (pdftex.def)             Requested size: 455.24408pt x 281.53pt.
  [22 <./results/conv2d.png>] [23 <./results/dense_layer.png>]
 Chapter 6.
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 618.
+
 [24
 
 ]
 Chapter 7.
-(preliminary_thesis.bbl [25
+(preliminary_thesis.bbl
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 2.
+
+[25
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 38--41
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 89.
+
+[26
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 144--147
 \OT1/cmr/m/n/12 org / wikipedia / commons / thumb / 4 / 46 / Colored[]neural[]n
 etwork . svg / 1200px -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--53
+Underfull \hbox (badness 10000) in paragraph at lines 150--153
 \OT1/cmr/m/n/12 researchgate . net / prole / Antonio[]Zippo / publication / 23
 2906025 / gure / g3 / AS :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--53
+Underfull \hbox (badness 10000) in paragraph at lines 150--153
 \OT1/cmr/m/n/12 300525175230467 @ 1448662193349 / Sample -[] of -[] common -[] 
 incorrect -[] classications -[] on -[]
  []
 
-[26
-
-] [27])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 649.
+[27])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 651.
  [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 649.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 651.
  (preliminary_thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 649.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 649.
-
-
-Package rerunfilecheck Warning: File `preliminary_thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `preliminary_thesis.out':
-(rerunfilecheck)             Before: 7426D5C0AE86C5176183A12820D00BC3;3058
-(rerunfilecheck)             After:  2E6B750107B4A513DFE72D8366947D1E;3139.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 649.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 651.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 651.
+Package rerunfilecheck Info: File `preliminary_thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 2E6B750107B4A513DFE72D8366947D1E;3139.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 651.
  ) 
 Here is how much of TeX's memory you used:
- 8057 strings out of 492902
- 120632 string characters out of 3133530
- 217745 words of memory out of 3000000
- 11686 multiletter control sequences out of 15000+200000
+ 8060 strings out of 492902
+ 120679 string characters out of 3133530
+ 217788 words of memory out of 3000000
+ 11688 multiletter control sequences out of 15000+200000
  11408 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,12n,43p,849b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,12n,46p,849b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
@@ -687,9 +720,9 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmti12.pfb>
-Output written on preliminary_thesis.pdf (35 pages, 916531 bytes).
+Output written on preliminary_thesis.pdf (35 pages, 917085 bytes).
 PDF statistics:
- 649 PDF objects out of 1000 (max. 8388607)
- 155 named destinations out of 1000 (max. 500000)
- 456 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 657 PDF objects out of 1000 (max. 8388607)
+ 156 named destinations out of 1000 (max. 500000)
+ 464 words of extra memory for PDF output out of 10000 (max. 10000000)
 
